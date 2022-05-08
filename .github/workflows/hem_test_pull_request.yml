@@ -37,8 +37,12 @@ jobs:
 
       - name: Validate PULL Request
         run: |
-          source_branch=$GITHUB_HEAD_REF
-          terget_branch=$GITHUB_BASE_REF
+          cd ./python-scripts/
+          python3 validate_pull_request.py
+          echo $?
+        env:
+          GITHUB_HEAD_REF=$GITHUB_HEAD_REF
+          GITHUB_BASE_REF=$GITHUB_BASE_REF
 
 
 

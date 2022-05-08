@@ -1,8 +1,11 @@
 import sys
 import os
 
-DBT_PROFILE_CICD_USER = (os.environ.get('DBT_PROFILE_CICD_USER'))
-DBT_PROFILE_CICD_PASSWORD = (os.environ.get('DBT_PROFILE_CICD_PASSWORD'))
+GITHUB_HEAD_REF = (os.environ.get('GITHUB_HEAD_REF'))
+GITHUB_BASE_REF = (os.environ.get('GITHUB_BASE_REF'))
+
+print('GITHUB_BASE_REF:',GITHUB_HEAD_REF)
+print('GITHUB_BASE_REF:',GITHUB_BASE_REF)
 
 base_branch = "main"
 source_branch = "release_v.1.0/domain_release"
