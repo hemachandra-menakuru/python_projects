@@ -4,8 +4,8 @@ import os
 source_branch = (os.environ.get('source_branch'))
 target_branch = (os.environ.get('target_branch'))
 
-print('GITHUB_HEAD_REF:',source_branch)
-print('GITHUB_BASE_REF:',target_branch)
+#print('GITHUB_HEAD_REF:',source_branch)
+#print('GITHUB_BASE_REF:',target_branch)
 
 #base_branch = "main"
 base_branch = target_branch
