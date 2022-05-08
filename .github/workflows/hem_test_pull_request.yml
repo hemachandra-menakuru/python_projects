@@ -1,7 +1,9 @@
 on:  
   #push:
   pull_request:
-    branches: ['syst03']
+    branches:
+      - syst03
+      - main
 
 # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
