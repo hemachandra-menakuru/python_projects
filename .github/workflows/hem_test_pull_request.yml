@@ -10,7 +10,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+      - run: python my_script.py
       - name: Test
         run: echo "start"
       - name: Branch name
@@ -29,4 +34,12 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
+
+      - name: Validate PULL Request
+        run: |
+          source_branch=$GITHUB_HEAD_REF
+          terget_branch=$GITHUB_BASE_REF
+
+
+
       
