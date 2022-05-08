@@ -1,0 +1,51 @@
+on:  
+  #push:
+  pull_request:
+    branches:
+      - main
+
+# Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+      - run: python --version
+      - name: Test
+        run: echo "start"
+      - name: Branch name
+        run: |
+          echo running on branch ${GITHUB_REF##*/}
+          echo $GITHUB_REPOSITORY
+          echo Reference Branch $GITHUB_REF
+          echo Head Reference Branch $GITHUB_HEAD_REF
+          echo Base Branch $GITHUB_BASE_REF
+          export target_branch=$GITHUB_BASE_REF
+          export source_branch=$GITHUB_HEAD_REF
+          echo target branch $target_branch
+          echo source branch $source_branch
+
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
+
+      - name: Validate PULL Request
+        env:
+          source_branch: ${{ github.head_ref }}
+          target_branch: ${{ github.base_ref }}
+        run: |
+          echo source_branch ${{ env.source_branch }}
+          echo target_branch ${{ env.target_branch }}
+          cd ./python-scripts/
+          python3 validate_pull_request.py
+          echo $?
+
+
+
+      
