@@ -7,7 +7,7 @@ on:
 # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
-  test:
+  first_job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -25,9 +25,9 @@ jobs:
           echo Reference Branch $GITHUB_REF
           echo Head Reference Branch $GITHUB_HEAD_REF
           echo Base Branch $GITHUB_BASE_REF
-          terget_branch=$GITHUB_BASE_REF
-          source_branch=$GITHUB_HEAD_REF
-          echo target branch $terget_branch
+          export target_branch=$GITHUB_BASE_REF
+          export source_branch=$GITHUB_HEAD_REF
+          echo target branch $trrget_branch
           echo source branch $source_branch
 
       - name: Dump GitHub context
@@ -40,9 +40,6 @@ jobs:
           cd ./python-scripts/
           python3 validate_pull_request.py
           echo $?
-        env:
-          GITHUB_HEAD_REF=$GITHUB_HEAD_REF
-          GITHUB_BASE_REF=$GITHUB_BASE_REF
 
 
 

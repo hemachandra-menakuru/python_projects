@@ -1,11 +1,11 @@
 import sys
 import os
 
-GITHUB_HEAD_REF = (os.environ.get('GITHUB_HEAD_REF'))
-GITHUB_BASE_REF = (os.environ.get('GITHUB_BASE_REF'))
+source_branch = (os.environ.get('GITHUB_HEAD_REF'))
+target_branch = (os.environ.get('target_branch'))
 
-print('GITHUB_BASE_REF:',GITHUB_HEAD_REF)
-print('GITHUB_BASE_REF:',GITHUB_BASE_REF)
+print('GITHUB_BASE_REF:',source_branch)
+print('GITHUB_BASE_REF:',target_branch)
 
 base_branch = "main"
 source_branch = "release_v.1.0/domain_release"
