@@ -14,4 +14,10 @@ jobs:
       - name: Test
         run: echo "start"
       - name: Branch name
-        run: echo running on branch ${GITHUB_REF##*/}
+        run: |
+          echo running on branch ${GITHUB_REF##*/}
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      
