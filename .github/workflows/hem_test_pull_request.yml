@@ -27,7 +27,7 @@ jobs:
           echo Base Branch $GITHUB_BASE_REF
           export target_branch=$GITHUB_BASE_REF
           export source_branch=$GITHUB_HEAD_REF
-          echo target branch $trrget_branch
+          echo target branch $target_branch
           echo source branch $source_branch
 
       - name: Dump GitHub context
@@ -36,7 +36,12 @@ jobs:
         run: echo "$GITHUB_CONTEXT"
 
       - name: Validate PULL Request
+        env:
+          source_branch: ${{ github.head_ref }}
+          target_branch: ${{ github.base_ref }}
         run: |
+          echo source_branch ${{ env.source_branch }}
+          echo target_branch ${{ env.target_branch }}
           cd ./python-scripts/
           python3 validate_pull_request.py
           echo $?
