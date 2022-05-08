@@ -12,4 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Test
-        run: echo "done"
+        run: echo "start"
+      - name: Branch name
+        run: echo running on branch ${GITHUB_REF##*/}
