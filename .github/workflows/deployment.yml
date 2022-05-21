@@ -1,0 +1,17 @@
+name: Deployment
+
+concurrency: development
+
+on:
+  pull_request:
+    branches:
+      - dev01
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: dev01
+    steps:
+      - name: deploy
+        run: |
+            echo deployed to dev01
