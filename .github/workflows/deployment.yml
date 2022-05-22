@@ -42,7 +42,7 @@ jobs:
 
   Deploy-syst01:
     name: Deploy to syst01 
-    if: github.event.ref == 'refs/heads/syst01'
+    if: github.event_name == 'pull_request'
     needs: [Build]
     runs-on: ubuntu-latest
     environment: 
