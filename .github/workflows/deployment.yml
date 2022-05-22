@@ -27,13 +27,13 @@ jobs:
     steps:
       - name: Deploy
         run: echo I am deploying to dev01 !
-        
+
       - id: automerge
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.3"
 
       - name: feedback
-        if: steps.automerge.outputs.mergeResult == "merged"
+        if: steps.automerge.outputs.mergeResult == 'merged'
         run: |
           echo "Pull request ${{ steps.automerge.outputs.pullRequestNumber }} merged!"
 
