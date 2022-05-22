@@ -27,8 +27,7 @@ jobs:
     steps:
       - name: Deploy
         run: echo I am deploying to dev01 !
-      steps:
-
+        
       - id: automerge
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.3"
