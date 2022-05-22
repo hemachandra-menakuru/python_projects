@@ -43,7 +43,7 @@ jobs:
   Deploy-syst01:
     name: Deploy to syst01 
     if: github.event.ref == 'refs/heads/syst01'
-    needs: [Deploy-dev01]
+    needs: [Build]
     runs-on: ubuntu-latest
     environment: 
       name: syst01
