@@ -49,4 +49,4 @@ jobs:
       name: syst01
     steps:
       - name: Deploy
-        run: echo I am deploying to syst01 !
+        run: echo I am deploying to syst01 -- !
