@@ -1,4 +1,4 @@
-name: Deployment
+name: CI + CD
 
 concurrency: development
 
@@ -8,10 +8,43 @@ on:
       - dev01
 
 jobs:
-  deployment:
+  Build:
     runs-on: ubuntu-latest
-    environment: dev01
     steps:
-      - name: deploy
-        run: |
-            echo deployed to dev01
+      - uses: actions/checkout@v2
+
+      - name: Compile
+        run: No Build required!!
+
+  Deploy-dev01:
+    name: Deploy to dev01
+    if: github.event_name == 'pull_request'
+    needs: [Build]
+    runs-on: ubuntu-latest
+    environment: 
+      name: dev01
+    steps:
+      - name: Deploy
+        run: echo I am deploying to dev01 ! 
+
+  Deploy-syst01:
+    name: Deploy to syst01 
+    if: github.event.ref == 'refs/heads/syst01'
+    needs: [Deploy-dev01]
+    runs-on: ubuntu-latest
+    environment: 
+      name: syst01
+    steps:
+      - name: Deploy
+        run: echo I am deploying to syst01 !
+             
+  DeployProd:
+    name: Deploy to Production 
+    needs: [DeployStaging]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Production
+      url: 'http://www.myapp.com'
+    steps:
+      - name: Deploy
+        run: echo I am deploying! 
