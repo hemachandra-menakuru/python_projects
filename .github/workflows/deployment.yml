@@ -4,8 +4,26 @@ concurrency: development
 
 on:
   pull_request:
+      types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
+    types:
+      - submitted
+  check_suite:
+    types:
+      - completed
+  status: {}
+  
     branches:
       - dev01
+      - syst01
 
 jobs:
   Build:
@@ -25,7 +43,17 @@ jobs:
       name: dev01
     steps:
       - name: Deploy
-        run: echo I am deploying to dev01 ! 
+        run: echo I am deploying to dev01 !
+      steps:
+
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.15.3"
+
+      - name: feedback
+        if: steps.automerge.outputs.mergeResult == "merged"
+        run: |
+          echo "Pull request ${{ steps.automerge.outputs.pullRequestNumber }} merged!"
 
   Deploy-syst01:
     name: Deploy to syst01 
