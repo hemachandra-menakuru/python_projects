@@ -31,6 +31,8 @@ jobs:
       - id: automerge
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.3"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: feedback
         if: steps.automerge.outputs.mergeResult == 'merged'
