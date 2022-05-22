@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
       - name: Compile
         run: echo No Build required!!
 
   Deploy-dev01:
     name: Deploy to dev01
     if: github.event_name == 'pull_request'
+    #&& github.event.ref == 'refs/heads/dev01'
     needs: [Build]
     runs-on: ubuntu-latest
     environment: 
@@ -42,11 +42,12 @@ jobs:
 
   Deploy-syst01:
     name: Deploy to syst01 
-    if: github.event.ref == 'refs/heads/syst01'
-    needs: [Deploy-dev01]
+    if: github.event_name == 'pull_request'
+    needs: [Build]
     runs-on: ubuntu-latest
     environment: 
       name: syst01
     steps:
       - name: Deploy
-        run: echo I am deploying to syst01 !
+        run: echo I am deploying to syst01 -- !
+
