@@ -3,6 +3,8 @@ pipeline {
     stages {
         stage ('Verify version') {
             steps{
+                sh 'pwd'
+                sh 'docker run --rm flyway/flyway'
                 sh 'docker run --rm flyway/flyway:8.5.1 version'
             }
         }
