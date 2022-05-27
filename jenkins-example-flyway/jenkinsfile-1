@@ -1,6 +1,10 @@
 pipeline {
     agent any
     stages {
+        stage('Docker Initialize'){
+        def dockerHome = tool 'myDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+                        }
         stage ('Verify version') {
             steps{
                 sh 'pwd'
