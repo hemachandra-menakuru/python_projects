@@ -1,9 +1,13 @@
 pipeline {
-    agent any
+    agent { dockerfile true }
     stages {
         stage ('Verify version') {
             steps{
-                sh 'pwd'
+                sh '''
+                    node --version
+                    git --version
+                    curl --version
+                  '''
                 sh 'docker run --rm flyway/flyway:8.5.1 version'
             }
         }
