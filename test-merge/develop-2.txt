@@ -1,1 +1,2 @@
+Added text from feature/test-conflicts branch
 file-2 from development branch
