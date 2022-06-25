@@ -1,0 +1,4054 @@
+{
+  "sources": [
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "11",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/churn/",
+      "object_name": "churn",
+      "targetTable": "edw_bia_data.churn",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "churn_potential",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "11",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/churn_potential/",
+      "targetTable": "edw_bia_data.churn_potential",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "churn_summary_monthly",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "12",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/churn_summary_monthly/",
+      "targetTable": "edw_bia_data.churn_summary_monthly",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_detail_delivery",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "22",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_detail_delivery/",
+      "targetTable": "edw_bia_data.cpm_detail_delivery",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_detail_pickup",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "22",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_detail_pickup/",
+      "targetTable": "edw_bia_data.cpm_detail_pickup",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_detail_processing",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "21",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_detail_processing/",
+      "targetTable": "edw_bia_data.cpm_detail_processing",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_detail_transport",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "22",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_detail_transport/",
+      "targetTable": "edw_bia_data.cpm_detail_transport",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_detail_weight",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "24",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_detail_weight/",
+      "targetTable": "edw_bia_data.cpm_detail_weight",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_dim_customer",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "6",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_dim_customer/",
+      "targetTable": "edw_bia_data.cpm_dim_customer",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_dim_product",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "6",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_dim_product/",
+      "targetTable": "edw_bia_data.cpm_dim_product",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "33",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_summary/",
+      "targetTable": "edw_bia_data.cpm_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "cpm_summary_high_level",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "60",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/cpm_summary_high_level/",
+      "targetTable": "edw_bia_data.cpm_summary_high_level",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "ctc_12_months",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "19",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/ctc_12_months/",
+      "targetTable": "edw_bia_data.ctc_12_months",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "ctc_recent_month",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "19",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/ctc_recent_month/",
+      "targetTable": "edw_bia_data.ctc_recent_month",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dim_customer_pns",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dim_customer_pns/",
+      "targetTable": "edw_bia_data.dim_customer_pns",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dim_pns_subscriptions",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "13",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dim_pns_subscriptions/",
+      "targetTable": "edw_bia_data.dim_pns_subscriptions",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_category_period_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "10",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_category_period_summary/",
+      "targetTable": "edw_bia_data.dpm_category_period_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_cd_category_period_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "10",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_cd_category_period_summary/",
+      "targetTable": "edw_bia_data.dpm_cd_category_period_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_cd_mth_category_details",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "7",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_cd_mth_category_details/",
+      "targetTable": "edw_bia_data.dpm_cd_mth_category_details",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_cd_reading",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "16",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_cd_reading/",
+      "targetTable": "edw_bia_data.dpm_cd_reading",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_cd_summary_by_channel_3yr",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "5",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_cd_summary_by_channel_3yr/",
+      "targetTable": "edw_bia_data.dpm_cd_summary_by_channel_3yr",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_lob_period_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "10",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_lob_period_summary/",
+      "targetTable": "edw_bia_data.dpm_lob_period_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_monthly_category_details",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "7",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_monthly_category_details/",
+      "targetTable": "edw_bia_data.dpm_monthly_category_details",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_monthly_lob_details",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "7",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_monthly_lob_details/",
+      "targetTable": "edw_bia_data.dpm_monthly_lob_details",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_reading",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "16",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_reading/",
+      "targetTable": "edw_bia_data.dpm_reading",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_reading_v2",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "16",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_reading_v2/",
+      "targetTable": "edw_bia_data.dpm_reading_v2",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_summary_by_channel_3yr",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "5",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_summary_by_channel_3yr/",
+      "targetTable": "edw_bia_data.dpm_summary_by_channel_3yr",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dpm_summary_by_lob_3yr",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "5",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dpm_summary_by_lob_3yr/",
+      "targetTable": "edw_bia_data.dpm_summary_by_lob_3yr",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "imc_maxi_conversion",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "2",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/imc_maxi_conversion/",
+      "targetTable": "edw_bia_data.imc_maxi_conversion",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "intl_processing_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "10",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/intl_processing_summary/",
+      "targetTable": "edw_bia_data.intl_processing_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "intl_processing_summary_t",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "10",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/intl_processing_summary_t/",
+      "targetTable": "edw_bia_data.intl_processing_summary_t",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "int_daily_interchangetipping",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "24",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/int_daily_interchangetipping/",
+      "targetTable": "edw_bia_data.int_daily_interchangetipping",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "int_daily_interchangetipping_t",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "24",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/int_daily_interchangetipping_t/",
+      "targetTable": "edw_bia_data.int_daily_interchangetipping_t",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "lsc_auto_effic_all",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "5",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/lsc_auto_effic_all/",
+      "targetTable": "edw_bia_data.lsc_auto_effic_all",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "lsc_cf_delivery_moth",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/lsc_cf_delivery_moth/",
+      "targetTable": "edw_bia_data.lsc_cf_delivery_moth",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "lsc_cf_processing",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "6",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/lsc_cf_processing/",
+      "targetTable": "edw_bia_data.lsc_cf_processing",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "lsc_dom_letter_comb",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/lsc_dom_letter_comb/",
+      "targetTable": "edw_bia_data.lsc_dom_letter_comb",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "lsc_dom_letter_comb_g2",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "15",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/lsc_dom_letter_comb_g2/",
+      "targetTable": "edw_bia_data.lsc_dom_letter_comb_g2",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "lsc_finance_rev_exp",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "10",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/lsc_finance_rev_exp/",
+      "targetTable": "edw_bia_data.lsc_finance_rev_exp",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "lsc_testpo",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "13",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/lsc_testpo/",
+      "targetTable": "edw_bia_data.lsc_testpo",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_clear_floor",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "5",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_clear_floor/",
+      "targetTable": "edw_bia_data.mom_clear_floor",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_combined_fte_vol_delivery",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "6",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_combined_fte_vol_delivery/",
+      "targetTable": "edw_bia_data.mom_combined_fte_vol_delivery",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_combined_fte_vol_processng",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "4",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_combined_fte_vol_processng/",
+      "targetTable": "edw_bia_data.mom_combined_fte_vol_processng",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_expend_del_cost",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "7",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_expend_del_cost/",
+      "targetTable": "edw_bia_data.mom_expend_del_cost",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_expend_proc_cost",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "7",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_expend_proc_cost/",
+      "targetTable": "edw_bia_data.mom_expend_proc_cost",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_orca_act_calc_proc",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "15",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_orca_act_calc_proc/",
+      "targetTable": "edw_bia_data.mom_orca_act_calc_proc",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_payroll_cost_hrs_comb_deli",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "13",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_payroll_cost_hrs_comb_deli/",
+      "targetTable": "edw_bia_data.mom_payroll_cost_hrs_comb_deli",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_payroll_cost_hrs_comb_proc",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "13",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_payroll_cost_hrs_comb_proc/",
+      "targetTable": "edw_bia_data.mom_payroll_cost_hrs_comb_proc",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "mom_unit_cost",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/mom_unit_cost/",
+      "targetTable": "edw_bia_data.mom_unit_cost",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pace_cpm_parent_data",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "51",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pace_cpm_parent_data/",
+      "targetTable": "edw_bia_data.pace_cpm_parent_data",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pace_cpm_product_analysis",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "26",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pace_cpm_product_analysis/",
+      "targetTable": "edw_bia_data.pace_cpm_product_analysis",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "postcode_alias",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "4",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/adhoc/lodgement_manager/postcode_alias/",
+      "targetTable": "adhoc.postcode_alias",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pace_cpm_summary_wc",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "7",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pace_cpm_summary_wc/",
+      "targetTable": "edw_bia_data.pace_cpm_summary_wc",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pace_customer_date_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "58",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pace_customer_date_summary/",
+      "targetTable": "edw_bia_data.pace_customer_date_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pace_customer_products_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "51",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pace_customer_products_summary/",
+      "targetTable": "edw_bia_data.pace_customer_products_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pace_location_date_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "55",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pace_location_date_summary/",
+      "targetTable": "edw_bia_data.pace_location_date_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pace_location_prod_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "44",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pace_location_prod_summary/",
+      "targetTable": "edw_bia_data.pace_location_prod_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pace_parent_segment",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "12",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pace_parent_segment/",
+      "targetTable": "edw_bia_data.pace_parent_segment",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_ctc_by_case_overall",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "13",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_ctc_by_case_overall/",
+      "targetTable": "edw_bia_data.pns_ctc_by_case_overall",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_ctc_by_case_tpid",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "19",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_ctc_by_case_tpid/",
+      "targetTable": "edw_bia_data.pns_ctc_by_case_tpid",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_ctc_with_notify_overall",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "11",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_ctc_with_notify_overall/",
+      "targetTable": "edw_bia_data.pns_ctc_with_notify_overall",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_ctc_with_notify_tpid",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "17",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_ctc_with_notify_tpid/",
+      "targetTable": "edw_bia_data.pns_ctc_with_notify_tpid",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_current_overview_tpid",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "33",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_current_overview_tpid/",
+      "targetTable": "edw_bia_data.pns_current_overview_tpid",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_data_quality_overall",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_data_quality_overall/",
+      "targetTable": "edw_bia_data.pns_data_quality_overall",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_data_quality_tpid",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "15",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_data_quality_tpid/",
+      "targetTable": "edw_bia_data.pns_data_quality_tpid",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_headline",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "13",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_headline/",
+      "targetTable": "edw_bia_data.pns_headline",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_headline_tpid",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "18",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_headline_tpid/",
+      "targetTable": "edw_bia_data.pns_headline_tpid",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_manifest_quality",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "20",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_manifest_quality/",
+      "targetTable": "edw_bia_data.pns_manifest_quality",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_master_merchant",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "14",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_master_merchant/",
+      "targetTable": "edw_bia_data.pns_master_merchant",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_merchant_details",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "18",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_merchant_details/",
+      "targetTable": "edw_bia_data.pns_merchant_details",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_merchant_status_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "7",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_merchant_status_summary/",
+      "targetTable": "edw_bia_data.pns_merchant_status_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_mth_atl_overall",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "17",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_mth_atl_overall/",
+      "targetTable": "edw_bia_data.pns_mth_atl_overall",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_mth_atl_receiver",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "18",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_mth_atl_receiver/",
+      "targetTable": "edw_bia_data.pns_mth_atl_receiver",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_mth_atl_tpid",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "23",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_mth_atl_tpid/",
+      "targetTable": "edw_bia_data.pns_mth_atl_tpid",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_mth_atl_tpid_receiver",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "24",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_mth_atl_tpid_receiver/",
+      "targetTable": "edw_bia_data.pns_mth_atl_tpid_receiver",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_notification_audit",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "11",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_notification_audit/",
+      "targetTable": "edw_bia_data.pns_notification_audit",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_notification_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "13",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_notification_summary/",
+      "targetTable": "edw_bia_data.pns_notification_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_notify_tpid",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "24",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_notify_tpid/",
+      "targetTable": "edw_bia_data.pns_notify_tpid",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_onboard_merchant",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "6",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_onboard_merchant/",
+      "targetTable": "edw_bia_data.pns_onboard_merchant",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_overview_overall",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "32",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_overview_overall/",
+      "targetTable": "edw_bia_data.pns_overview_overall",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_overview_tpid",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "33",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_overview_tpid/",
+      "targetTable": "edw_bia_data.pns_overview_tpid",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_parcel_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "47",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_parcel_summary/",
+      "targetTable": "edw_bia_data.pns_parcel_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "pns_total_notify",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "6",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/pns_total_notify/",
+      "targetTable": "edw_bia_data.pns_total_notify",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "sbm_detailed_run",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "50",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/sbm_detailed_run/",
+      "targetTable": "edw_bia_data.sbm_detailed_run",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "sbm_ofd_pod_pct",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "4",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/sbm_ofd_pod_pct/",
+      "targetTable": "edw_bia_data.sbm_ofd_pod_pct",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "sbm_run_half_hourly",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/sbm_run_half_hourly/",
+      "targetTable": "edw_bia_data.sbm_run_half_hourly",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "tblparttypes_tst",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "3",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/tblparttypes_tst/",
+      "targetTable": "edw_bia_data.tblparttypes_tst",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_all_organisations_sum_sum",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "14",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_all_organisations_sum_sum/",
+      "targetTable": "edw_bia_data.zbmn_all_organisations_sum_sum",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_org_rank_all",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "16",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_org_rank_all/",
+      "targetTable": "edw_bia_data.zbmn_org_rank_all",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_org_summary_master_detail",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "12",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_org_summary_master_detail/",
+      "targetTable": "edw_bia_data.zbmn_org_summary_master_detail",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_org_tier_prod_period",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_org_tier_prod_period/",
+      "targetTable": "edw_bia_data.zbmn_org_tier_prod_period",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_org_zone_size_period",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "10",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_org_zone_size_period/",
+      "targetTable": "edw_bia_data.zbmn_org_zone_size_period",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_product_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "11",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_product_summary/",
+      "targetTable": "edw_bia_data.zbmn_product_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_prod_details",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "12",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_prod_details/",
+      "targetTable": "edw_bia_data.zbmn_prod_details",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_roll_over_12m",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "12",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_roll_over_12m/",
+      "targetTable": "edw_bia_data.zbmn_roll_over_12m",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_tier_prod_period",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "7",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_tier_prod_period/",
+      "targetTable": "edw_bia_data.zbmn_tier_prod_period",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_yoy_all_cust_master",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "15",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_yoy_all_cust_master/",
+      "targetTable": "edw_bia_data.zbmn_yoy_all_cust_master",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_yoy_top_bulk_cust",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "18",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_yoy_top_bulk_cust/",
+      "targetTable": "edw_bia_data.zbmn_yoy_top_bulk_cust",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "zbmn_zone_size_period",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "8",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/zbmn_zone_size_period/",
+      "targetTable": "edw_bia_data.zbmn_zone_size_period",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "ctc_12_months",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "18",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/ctc_12_months/",
+      "targetTable": "edw_bia_data.ctc_12_months",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "fct_performance_inbound",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "22",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/dw/fct_performance_inbound/",
+      "targetTable": "edw_dw.fct_performance_inbound",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "dim_date",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "78",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/persist/dim_date/",
+      "targetTable": "edw_persist.dim_date",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "marketing_customer_segment",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "2",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/persist/marketing_customer_segment/",
+      "targetTable": "edw_persist.marketing_customer_segment",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "delay_daily_v1",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "6",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/sas_temp/delay_daily_v1/",
+      "targetTable": "edw_sas_temp.delay_daily_v1",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "delay_month_v1",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "30",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/sas_temp/delay_month_v1/",
+      "targetTable": "edw_sas_temp.delay_month_v1",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "inbound_summary",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "15",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/sas_temp/inbound_summary/",
+      "targetTable": "edw_sas_temp.inbound_summary",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "inbound2",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "29",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/sas_temp/inbound2/",
+      "targetTable": "edw_sas_temp.inbound2",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "interchange_final_extract",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "32",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/sas_temp/interchange_final_extract/",
+      "targetTable": "edw_sas_temp.interchange_final_extract",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "tbleventtypes",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "2",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/aoc_sorter/tbleventtypes/",
+      "targetTable": "aoc_sorter.tbleventtypes",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "tblirsitemcodingresult",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "19",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/aoc_sorter/tblirsitemcodingresult/",
+      "targetTable": "aoc_sorter.tblirsitemcodingresult",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "tblitemdata",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "30",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/aoc_sorter/tblitemdata/",
+      "targetTable": "aoc_sorter.tblitemdata",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "tblitemeventhistory",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/aoc_sorter/tblitemeventhistory/",
+      "targetTable": "aoc_sorter.tblitemeventhistory",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "tblparts",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "8",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/aoc_sorter/tblparts/",
+      "targetTable": "aoc_sorter.tblparts",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "tblparttypes",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "3",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/aoc_sorter/tblparttypes/",
+      "targetTable": "aoc_sorter.tblparttypes",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "tblresulttypes",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "5",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/aoc_sorter/tblresulttypes/",
+      "targetTable": "aoc_sorter.tblresulttypes",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "equipment",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "10",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/soc_sorter/equipment/",
+      "targetTable": "soc_sorter.equipment",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "equipmenttype",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "8",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/soc_sorter/equipmenttype/",
+      "targetTable": "soc_sorter.equipmenttype",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "item",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "43",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/soc_sorter/item/",
+      "targetTable": "soc_sorter.item",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "trace",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "9",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/soc_sorter/trace/",
+      "targetTable": "soc_sorter.trace",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "object_name": "traceaction",
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": "3",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/soc_sorter/traceaction/",
+      "targetTable": "soc_sorter.traceaction",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 26,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/fact_pns_pcd_events/",
+      "object_name": "fact_pns_pcd_events",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.fact_pns_pcd_events"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 15,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dim_ocd_location/",
+      "object_name": "dim_ocd_location",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.dim_ocd_location"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 6,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dim_ocd_proc_site_kpi_measures/",
+      "object_name": "dim_ocd_proc_site_kpi_measures",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.dim_ocd_proc_site_kpi_measures"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 6,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dim_ocd_processing_site_shift/",
+      "object_name": "dim_ocd_processing_site_shift",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.dim_ocd_processing_site_shift"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 2,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dim_ocd_report_glossary/",
+      "object_name": "dim_ocd_report_glossary",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.dim_ocd_report_glossary"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 2,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dim_ocd_safety_incident_result/",
+      "object_name": "dim_ocd_safety_incident_result",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.dim_ocd_safety_incident_result"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 2,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/dim_ocd_safety_incident_type/",
+      "object_name": "dim_ocd_safety_incident_type",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.dim_ocd_safety_incident_type"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 7,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/fct_ocd_daily_parcel_perf/",
+      "object_name": "fct_ocd_daily_parcel_perf",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.fct_ocd_daily_parcel_perf"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 12,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/fct_ocd_tms_scan_compliance/",
+      "object_name": "fct_ocd_tms_scan_compliance",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.fct_ocd_tms_scan_compliance"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 21,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/fct_ocd_safety_incident/",
+      "object_name": "fct_ocd_safety_incident",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.fct_ocd_safety_incident"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 4,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/edw/bia_data/fct_ocd_workday_item_count/",
+      "object_name": "fct_ocd_workday_item_count",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "edw_bia_data.fct_ocd_workday_item_count"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 77,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/nmvas/addr_current_snapshot/",
+      "object_name": "addr_current_snapshot",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "nmvas.addr_current_snapshot"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 30,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/nmvas/org_struct_current_snapshot/",
+      "object_name": "org_struct_current_snapshot",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "nmvas.org_struct_current_snapshot"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 25,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/base_address/",
+      "object_name": "base_address",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.base_address"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 7,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/box_bag_lobby_alias/",
+      "object_name": "box_bag_lobby_alias",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.box_bag_lobby_alias"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 18,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/box_bag_lobby/",
+      "object_name": "box_bag_lobby",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.box_bag_lobby"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 7,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/box_bag/",
+      "object_name": "box_bag",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.box_bag"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 9,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/city_alias/",
+      "object_name": "city_alias",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.city_alias"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 6,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/city_town/",
+      "object_name": "city_town",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.city_town"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 7,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/city_town_suburb/",
+      "object_name": "city_town_suburb",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.city_town_suburb"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 9,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/cts_alias/",
+      "object_name": "cts_alias",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.cts_alias"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 4,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/delivery_service_type/",
+      "object_name": "delivery_service_type",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.delivery_service_type"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 8,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/mail_town_alias/",
+      "object_name": "mail_town_alias",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.mail_town_alias"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 6,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/mail_town/",
+      "object_name": "mail_town",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.mail_town"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 7,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/outlet_alias/",
+      "object_name": "outlet_alias",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.outlet_alias"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 7,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/outlet_delivery/",
+      "object_name": "outlet_delivery",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.outlet_delivery"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 18,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/outlet/",
+      "object_name": "outlet",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.outlet"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 21,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/postal_address/",
+      "object_name": "postal_address",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.postal_address"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 11,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/postcode/",
+      "object_name": "postcode",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.postcode"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 16,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/road_segment/",
+      "object_name": "road_segment",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.road_segment"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 2,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/road_suffix/",
+      "object_name": "road_suffix",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.road_suffix"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 3,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/road_type/",
+      "object_name": "road_type",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.road_type"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 5,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/road/",
+      "object_name": "road",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.road"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 4,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/suburb/",
+      "object_name": "suburb",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.suburb"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 2,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/unique_city_alias/",
+      "object_name": "unique_city_alias",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.unique_city_alias"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": "|",
+      "no_columns": 2,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/npad/npad/unique_mail_town_alias/",
+      "object_name": "unique_mail_town_alias",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11,13}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11,13}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "npad.unique_mail_town_alias"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": ",",
+      "no_columns": 11,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/data_science/edt_run_config/",
+      "object_name": "edt_run_config",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[0-9]{8}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "[0-9]{8}",
+        "dateformat": "%Y%m%d",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "data_science.edt_run_config"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": ",",
+      "no_columns": 17,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/data_science/edt_test_evaluation/",
+      "object_name": "edt_test_evaluation",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[0-9]{8}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "[0-9]{8}",
+        "dateformat": "%Y%m%d",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "data_science.edt_test_evaluation"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": ",",
+      "no_columns": 22,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/data_science/edt_staging/",
+      "object_name": "edt_staging",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[0-9]{8}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "[0-9]{8}",
+        "dateformat": "%Y%m%d",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "data_science.edt_staging"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": ",",
+      "no_columns": 6,
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/data_science/edt_predictions/",
+      "object_name": "edt_predictions",
+      "id": {
+        "type": "filename",
+        "value": "[^/]+(\\w\\d)"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "[0-9]{8}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "[0-9]{8}",
+        "dateformat": "%Y%m%d",
+        "timezone": "Pacific/Auckland"
+      },
+      "targetTable": "data_science.edt_predictions"
+    },
+    {
+      "format": "csv",
+      "field_delimiter": ",",
+      "no_columns": "87",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/oms/account/",
+      "object_name": "account",
+      "targetTable": "oms.account",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    },
+    {
+      "format": "csv",
+      "field_delimiter": ",",
+      "no_columns": "80",
+      "skip_header_rows": "1",
+      "field_optionally_enclosed_by": "\"",
+      "format_type_option_null_if": "('', 'NULL', 'null')",
+      "s3Path": "landing/oms/contact/",
+      "object_name": "contact",
+      "targetTable": "oms.contact",
+      "id": {
+        "type": "filename",
+        "value": "20\\w{11}"
+      },
+      "correlation_id": {
+        "type": "filename",
+        "value": "20\\w{11}"
+      },
+      "created_at": {
+        "type": "filename",
+        "value": "20\\w{11}",
+        "dateformat": "%Y%m%dT%H%M%S",
+        "timezone": "Pacific/Auckland"
+      }
+    }
+  ]
+}
