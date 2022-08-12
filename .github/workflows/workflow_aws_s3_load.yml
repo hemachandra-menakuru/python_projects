@@ -1,16 +1,11 @@
-# This workflow picks up any changes to lambda config files and automatically loads them to the
-# appropriate S3 bucket. This saves us having to upload them by hand.
-name: Load config files to AWS S3
-
-# This workflow needs to run on any push that changed any files in the `aws/lam[b]da_configurations`
-# directory. It would be preferable to only upload the files that have been changed, but at the
-# moment I can't find out if that's possible without getting bash scripts involved and making the
-# process more complicated than it needs to be.
+####
+name: Local files load to AWS S3 bucket
 
 on:
   push:
     branches:
       - feature/json-files
+      - dev01
     paths:
       - aws/s3/**
 
