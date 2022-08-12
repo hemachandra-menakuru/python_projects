@@ -1,0 +1,47 @@
+# This workflow picks up any changes to lambda config files and automatically loads them to the
+# appropriate S3 bucket. This saves us having to upload them by hand.
+name: Load config files to S3
+
+# This workflow needs to run on any push that changed any files in the `aws/lam[b]da_configurations`
+# directory. It would be preferable to only upload the files that have been changed, but at the
+# moment I can't find out if that's possible without getting bash scripts involved and making the
+# process more complicated than it needs to be.
+on:
+  push:
+    branches:
+      - feature/json-files
+    paths:
+      - aws/s3/**
+
+  workflow_dispatch:
+
+jobs:
+  # For any given push event only one of these jobs will run, loading files to test, dev or prod
+  # depending on the branch name.
+
+  load_files_to_s3:
+    # Including the branch name in the job name will help us track what's going on
+    name: Load files to S3 from ${{ github.ref }}
+
+    # Dev branches are identified by `feature/` in the branch name. Any push to a feature branch
+    # (where the config files have changed) will trigger the workflow to update all the config
+    # files. This may mean that you overwrite someone else's config files if multiple people are
+    # editing them at once.
+    #if: contains(github.ref, 'feature') || github.ref == 'develop'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Authenticate with AWS
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-2
+
+      - name: Upload files in `aws/s3/`
+        working-directory: aws/s3
+        run: >
+          aws s3 sync --exclude README.md . https://s3.console.aws.amazon.com/s3/buckets/hem-landing/inbound
