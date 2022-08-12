@@ -43,6 +43,5 @@ jobs:
           aws-region: ap-southeast-2
 
       - name: Upload files in `aws/s3/`
-        working-directory: aws/s3
         run: >
-          aws s3 sync --exclude README.md . https://s3.console.aws.amazon.com/s3/buckets/hem-landing/inbound
+          aws s3 sync ./aws/s3/  s3://hem-landing/inbound/
