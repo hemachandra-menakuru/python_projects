@@ -6,15 +6,14 @@ name: Load config files to AWS S3
 # directory. It would be preferable to only upload the files that have been changed, but at the
 # moment I can't find out if that's possible without getting bash scripts involved and making the
 # process more complicated than it needs to be.
+
 on:
   push:
     branches:
-      - "feature/**"
-      - master
+      - "develop"
+      - "feature/json-files"
     paths:
-      - aws/s3/**
-
-  workflow_dispatch:
+      - "aws/s3/**"
 
 jobs:
   # For any given push event only one of these jobs will run, loading files to test, dev or prod
