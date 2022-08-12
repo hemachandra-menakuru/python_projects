@@ -24,9 +24,21 @@ jobs:
           echo running on branch ${GITHUB_REF##*/}
           echo $GITHUB_REPOSITORY
           echo Reference Branch $GITHUB_REF
-          echo Head Reference Branch $GITHUB_HEAD_REF
-          echo Base Branch $GITHUB_BASE_REF
-          export target_branch=$GITHUB_BASE_REF
-          export source_branch=$GITHUB_HEAD_REF
-          echo target branch $target_branch
-          echo source branch $source_branch
+          
+  load_files_to_s3:
+    #if: contains(github.ref, 'feature') || github.ref == 'develop'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Authenticate with AWS
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-2
+
+      - name: Upload files in `aws/s3/`
+        run: >
+          aws s3 sync ./aws/s3/  s3://hem-landing/inbound/
