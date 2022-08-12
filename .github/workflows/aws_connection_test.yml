@@ -26,7 +26,7 @@ jobs:
     # Dev branches are identified by `feature/` in the branch name. Any push to a feature branch
     # (where the config files have changed) will trigger the workflow to update all the config
     # files. This may mean that you overwrite someone else's config files if multiple people are
-    # editing them at once.
+    # editing them at once.....
     #if: contains(github.ref, 'feature') || github.ref == 'develop'
     runs-on: ubuntu-latest
 
