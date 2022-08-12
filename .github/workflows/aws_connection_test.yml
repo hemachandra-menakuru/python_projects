@@ -10,10 +10,9 @@ name: Load config files to AWS S3
 on:
   push:
     branches:
-      - "develop"
-      - "feature/json-files"
+      - feature/json-files
     paths:
-      - "aws/s3/**"
+      - aws/s3/**
 
 jobs:
   # For any given push event only one of these jobs will run, loading files to test, dev or prod
