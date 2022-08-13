@@ -41,4 +41,4 @@ jobs:
 
       - name: Upload files in `aws/s3/`
         run: >
-          aws s3 sync ./aws/s3/  s3://hem-landing/inbound/
+          aws s3 sync ./aws/s3/  s3://localdesktop-sync/test_local_sync/
