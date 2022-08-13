@@ -13,8 +13,6 @@ provider "aws" {
 
 resource "aws_s3_bucket" "test_bucket" {
   bucket = "test-bkt-dply-terraform"
-  acl    = "private"
-
   tags = {
     Name = "Created and deployed this bucket through terraform"
   }
