@@ -21,8 +21,8 @@ resource "aws_s3_bucket" "test_bucket" {
 }
 
 resource "aws_s3_bucket_object" "object1" {
-  for_each = fileset("aws/s3", "**")
-  bucket = "s3://hem-landing/inbound/"
+  for_each = fileset("./aws/s3", "**")
+  bucket = "s3://test-bkt-dply-terraform/inbound-test/"
   key = each.value
   source = "./aws/s3/${each.value}"
   etag = filemd5("aws/s3/${each.value}")
