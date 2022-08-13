@@ -40,10 +40,12 @@ jobs:
       - name: AWS S3 Deploy (dry run)
         run: |
           terraform init
+          terraform workspace select dev
           terraform plan
 
       - name: AWS S3 Deploy (implementation)
         if: success()
         run: |
           terraform init
+          terraform workspace select dev
           terraform apply -auto-approve

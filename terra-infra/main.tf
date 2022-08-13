@@ -19,3 +19,12 @@ resource "aws_s3_bucket" "test_bucket" {
     Name = "Created and deployed this bucket through terraform"
   }
 }
+
+resource "aws_s3_bucket" "test_bucket-2" {
+  bucket = "test2-bkt-dply-terraform"
+  acl    = "private"
+
+  tags = {
+    Name = "Created and deployed this bucket through terraform"
+  }
+}
