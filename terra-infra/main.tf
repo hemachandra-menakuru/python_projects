@@ -27,5 +27,3 @@ resource "aws_s3_bucket_object" "object1" {
   source = "./aws/s3/${each.value}"
   etag = filemd5("aws/s3/${each.value}")
 }
-
-}
