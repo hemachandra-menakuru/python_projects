@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "test_bucket" {
   }
 }
 
-resource "aws_s3_bucket_object" "object1" {
+resource "aws_s3_object" "object1" {
   for_each = fileset("./aws/s3", "**")
   bucket = "test-bkt-dply-terraform"
   key = each.value
