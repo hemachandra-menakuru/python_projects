@@ -4,7 +4,6 @@ name: Local files load to AWS S3 bucket
 on:
   push:
     branches:
-      - feature/json-files
       - dev01
     paths:
       - aws/s3/**
