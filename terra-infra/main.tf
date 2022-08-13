@@ -20,11 +20,12 @@ resource "aws_s3_bucket" "test_bucket" {
   }
 }
 
-resource "aws_s3_bucket" "test_bucket-2" {
-  bucket = "test2-bkt-dply-terraform"
-  acl    = "private"
+resource "aws_s3_bucket_object" "object1" {
+  for_each = fileset("aws/s3", "*")
+  bucket = s3://hem-landing/inbound/
+  key = each.value
+  source = "aws/s3/${each.value}"
+  etag = filemd5("aws/s3/${each.value}")
+}
 
-  tags = {
-    Name = "Created and deployed this bucket through terraform"
-  }
 }
