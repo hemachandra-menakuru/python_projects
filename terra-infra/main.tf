@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "test_bucket" {
 }
 
 resource "aws_s3_object" "object1" {
-  bucket = "test-bkt-dply-terraform"
-  key = "inbound-test"
+  bucket = aws_s3_bucket.test_bucket.id
+  key = "test2.txt"
   source = "/aws/s3/test2.txt"
 }
