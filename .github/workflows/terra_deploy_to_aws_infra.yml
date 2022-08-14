@@ -45,7 +45,7 @@ jobs:
         run: |
           echo source_branch ${{ env.source_branch }}
           echo target_branch ${{ env.target_branch }}
-          source_files_path=./aws/s3
+          source_files_path=`pwd`
           lst=`ls $source_files_path`
           echo $lst
 
