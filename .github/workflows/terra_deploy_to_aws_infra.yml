@@ -56,7 +56,7 @@ jobs:
         run: |
           terraform init
           terraform workspace select dev
-          terraform plan
+          terraform plan -var "source_files_path=${source_files_path}"
 
       - name: AWS S3 Deploy (implementation)
         if: success()
