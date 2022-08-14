@@ -40,7 +40,7 @@ jobs:
 
       - name: Set Source AWS S3 files path
         run: |
-          source_files_path = "../../aws/s3/"
+          source_files_path = "./aws/s3/"
           lst=`ls $source_files_path`
           echo $ls
 
