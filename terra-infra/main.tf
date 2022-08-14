@@ -14,11 +14,13 @@ provider "aws" {
 locals {
   rootpath = abspath(path.root)
   modulepath = abspath(path.module)
-  tfsettingsfile = "${path.module}/../../../"
+  tfsettingsfile = "../../aws/s3"
+  path_cwd         = abspath(path.cwd)
 }
 output "rootpath" { value = "${local.rootpath}" }
 output "modulepath" { value = "${local.modulepath}" }
 output "tfsettingsfile" { value = "${local.tfsettingsfile}" }
+output "tfsettingsfile" { value = "${local.path_cwd}" }
 
 resource "aws_s3_bucket" "test_bucket" {
   bucket = "test-bkt-dply-terraform"
