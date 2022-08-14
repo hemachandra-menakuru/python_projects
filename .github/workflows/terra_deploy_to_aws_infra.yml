@@ -43,9 +43,9 @@ jobs:
           cd ../aws/s3
           source_files_path=`pwd`
           echo $source_files_path
+          echo "source_files_path=$source_files_path" >> $GITHUB_ENV
           lst=`ls $source_files_path`
-          echo $ls
-
+          echo $lst
 
       - name: Create Terraform Workspace if not exists
         run: |
@@ -61,6 +61,7 @@ jobs:
       - name: AWS S3 Deploy (implementation)
         if: success()
         run: |
+          echo "source_files_path: ${source_files_path}"
           terraform init
           terraform workspace select dev
           terraform apply -auto-approve
