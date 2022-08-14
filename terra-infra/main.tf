@@ -36,6 +36,6 @@ resource "aws_s3_bucket" "test_bucket" {
 
 resource "aws_s3_object" "object1" {
   bucket = aws_s3_bucket.test_bucket.id
-  key = "test2.txt"
+  key = "inbound-test/test2.txt"
   source = "${var.source_files_path}/test2.txt"
 }
