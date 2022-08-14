@@ -46,7 +46,7 @@ jobs:
           echo source_branch ${{ env.source_branch }}
           echo target_branch ${{ env.target_branch }}
           curr_dir=`pwd`
-          source_files_path=`cd $curr_dir\..`
+          source_files_path=`cd $curr_dir/..`
           echo $source_files_path
           lst=`ls $source_files_path`
           echo $lst
