@@ -28,3 +28,6 @@ resource "aws_s3_bucket" "test_bucket" {
     Name = "Created and deployed this bucket through terraform"
   }
 }
+
+
+
