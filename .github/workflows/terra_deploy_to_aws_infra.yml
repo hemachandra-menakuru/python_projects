@@ -38,6 +38,17 @@ jobs:
         with:
           terraform_version: 1.0.0
 
+      - name: Set Source AWS S3 files path
+        env:
+          source_branch: ${{ github.head_ref }}
+          target_branch: ${{ github.base_ref }}
+        run: |
+          echo source_branch ${{ env.source_branch }}
+          echo target_branch ${{ env.target_branch }}
+          source_files_path =  ./aws/s3
+          lst=`ls $source_files_path`
+          echo $lst
+
       - name: Create Terraform Workspace if not exists
         run: |
           terraform init
