@@ -11,6 +11,11 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
+variable "source_files_path" {
+  description = "Local files path to uploaded to S3 bucket"
+  type        = string
+}
+
 locals {
   rootpath = abspath(path.root)
   modulepath = abspath(path.module)
@@ -27,4 +32,10 @@ resource "aws_s3_bucket" "test_bucket" {
   tags = {
     Name = "Created and deployed this bucket through terraform"
   }
+}
+
+resource "aws_s3_object" "object1" {
+  bucket = aws_s3_bucket.test_bucket.id
+  key = "test2.txt"
+  source = "${var.source_files_path}/test2.txt"
 }

@@ -64,4 +64,4 @@ jobs:
           echo "source_files_path: ${source_files_path}"
           terraform init
           terraform workspace select dev
-          terraform apply -auto-approve
+          terraform apply -var "source_files_path=${source_files_path}" -auto-approve
