@@ -20,7 +20,7 @@ locals {
 output "rootpath" { value = "${local.rootpath}" }
 output "modulepath" { value = "${local.modulepath}" }
 output "tfsettingsfile" { value = "${local.tfsettingsfile}" }
-output "tfsettingsfile" { value = "${local.path_cwd}" }
+output "path_cwd" { value = "${local.path_cwd}" }
 
 resource "aws_s3_bucket" "test_bucket" {
   bucket = "test-bkt-dply-terraform"
