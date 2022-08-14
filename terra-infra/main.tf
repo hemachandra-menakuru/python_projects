@@ -13,7 +13,7 @@ provider "aws" {
 
 locals {
   test = abspath(path.root)
-  filename = "${path.root}/example"
+  s3path = "${path.root}/example"
 }
 output "test" { value = "${local.test}" }
 
@@ -26,6 +26,6 @@ resource "aws_s3_bucket" "test_bucket" {
 
 resource "aws_s3_object" "object1" {
   bucket = aws_s3_bucket.test_bucket.id
-  key = "test2.txt"
-  source = "/home/runner/work/python_projects/python_projects/aws/s3/test2.txt"
+  key = "inbound-test/test3.txt"
+  source = "../../aws/s3/test2.txt"
 }
