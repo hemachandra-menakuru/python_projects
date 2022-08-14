@@ -1,0 +1,48 @@
+
+
+resource "aws_s3_object" "object1" {
+  bucket = aws_s3_bucket.test_bucket.id
+  key = "test2.txt"
+  source = "/home/runner/work/python_projects/python_projects/aws/s3/test2.txt"
+}
+
+resource "aws_s3_object" "object1" {
+  bucket = aws_s3_bucket.test_bucket.id
+  key = "inbound-test/test2.txt"
+  source = "${var.source_files_path}/test2.txt"
+}
+
+${var.source_files_path}/test2.txt
+
+resource "aws_s3_object" "object1" {
+  bucket = aws_s3_bucket.test_bucket.id
+  key = "test2.txt"
+  source = "${var.source_files_path}/test2.txt"
+}
+
+
+terraform apply -var "source_files_path=YetAnotherName"
+
+
+resource "aws_s3_object" "object1" {
+  bucket = aws_s3_bucket.test_bucket.id
+  key = "test2.txt"
+  source = "../../aws/s3/test2.txt"
+}
+
+source_code_path = "../../python_scripts/
+
+relative_path_to_source_file    = "./"
+
+
+../../
+
+test = "/home/runner/work/python_projects/python_projects/terra-infra"
+
+/home/runner/work/python_projects/python_projects/aws/s3/test2.txt
+
+s3://test-bkt-dply-terraform/inbound-test/
+
+ tfsettingsfile = "${path.module}/../../../environments/${terraform.workspace}.yaml"
+ 
+  tfsettingsfile = "${path.module}/../../"

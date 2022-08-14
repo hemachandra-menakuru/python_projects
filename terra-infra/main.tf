@@ -34,8 +34,9 @@ resource "aws_s3_bucket" "test_bucket" {
   }
 }
 
-resource "aws_s3_object" "object1" {
+resource "aws_s3_object" "objects" {
+  for_each = fileset("${var.source_files_path}/", "*.*")
   bucket = aws_s3_bucket.test_bucket.id
-  key = "inbound-test/test2.txt"
-  source = "${var.source_files_path}/test2.txt"
+  key = "inbound-test/${each.value}"
+  source = "${var.source_files_path}/${each.value}"
 }
