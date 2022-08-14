@@ -12,20 +12,15 @@ provider "aws" {
 }
 
 locals {
-  test = abspath(path.root)
-  s3path = "${path.root}/example"
+  rootpath = abspath(path.root)
+  modulepath = abspath(path.module)
 }
-output "test" { value = "${local.test}" }
+output "rootpath" { value = "${local.rootpath}" }
+output "modulepath" { value = "${local.modulepath}" }
 
 resource "aws_s3_bucket" "test_bucket" {
   bucket = "test-bkt-dply-terraform"
   tags = {
     Name = "Created and deployed this bucket through terraform"
   }
-}
-
-resource "aws_s3_object" "object1" {
-  bucket = aws_s3_bucket.test_bucket.id
-  key = "inbound-test/test3.txt"
-  source = "../../aws/s3/test2.txt"
 }
