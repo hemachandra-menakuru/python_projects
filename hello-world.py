@@ -11,3 +11,6 @@ def fun_test(val1):
     return x
     
 fun_test(val1)
+
+## https://snowflake.zoom.us/s/83980883095?pwd=ck0yN0hiajkyb2wvZmdpUHg1eW1BZz09
+## https://snowflake.zoom.us/s/83980883095?pwd=ck0yN0hiajkyb2wvZmdpUHg1eW1BZz09
