@@ -42,3 +42,21 @@ UNION ALL
 SELECT CONCAT('Column_Y_NoMatch_Count:', COUNT(CASE WHEN Column_Y = 'NOMATCH' THEN 1 END)) AS Counts
 FROM data;
 
+----------------
+
+SELECT
+  CONCAT(column_name, ':', count) AS Counts
+FROM
+  (SELECT
+    COUNT(CASE WHEN Column_X = 'MATCH' THEN 1 END) AS match_x,
+    COUNT(CASE WHEN Column_X = 'NOMATCH' THEN 1 END) AS nomatch_x,
+    COUNT(CASE WHEN Column_Y = 'MATCH' THEN 1 END) AS match_y,
+    COUNT(CASE WHEN Column_Y = 'NOMATCH' THEN 1 END) AS nomatch_y
+  FROM
+    data) counts
+CROSS JOIN
+  (SELECT 'Column_X_Match_Count' AS column_name
+   UNION ALL SELECT 'Column_X_NoMatch_Count'
+   UNION ALL SELECT 'Column_Y_Match_Count'
+   UNION ALL SELECT 'Column_Y_NoMatch_Count') columns;
+
