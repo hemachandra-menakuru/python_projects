@@ -59,4 +59,18 @@ CROSS JOIN
    UNION ALL SELECT 'Column_X_NoMatch_Count'
    UNION ALL SELECT 'Column_Y_Match_Count'
    UNION ALL SELECT 'Column_Y_NoMatch_Count') columns;
+    
+--------------------------
+
+-- Set the parameters for the source schema, target schema, and schema comment
+SET source_schema = '{{source_schema}}';
+SET target_schema = '{{target_schema}}';
+SET schema_comment = '{{schema_comment}}';
+
+-- Create the target schema if it doesn't exist
+CREATE SCHEMA IF NOT EXISTS IDENTIFIER(:target_schema) COMMENT = :schema_comment;
+
+-- Clone the schema
+CREATE SCHEMA IDENTIFIER(:target_schema) CLONE IDENTIFIER(:source_schema);
+
 
