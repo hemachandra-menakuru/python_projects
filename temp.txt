@@ -9,3 +9,18 @@ a release/xxxxx branch will be created off from develop  branch for planned 
 a release script/s will be prepared and added to the release branch (in the Release folder for every individual schema)
 a 'Release Implementer' needs to manually run the Jenkins pipeline to deploy the release scripts to SIT,UAT and PROD (with the respective pipeline executing the release script from release branch)
 once the deployment successful, then a PR# is initiated to merge release branch into the develop branch.
+
+
+-------
+corrected version
+-----
+All DDL scripts will be modeled using ERWIN. Development will take place in a shared development database (DEV01/DEV02). Once the final version of a script has been generated from ERWIN and tested in the development database, the process of incorporating the changes into GitHub and SYST will likely be carried out manually. SIT, UAT, and PROD will follow the steps outlined below:
+
+1. A feature branch will be created from the develop branch.
+2. The script(s) will be added to the feature branch.
+3. Tests will be performed on the DEV and SYST databases.
+4. A Pull Request will be initiated to merge the feature branch into the develop branch after the successful completion of tests.
+5. A release branch (e.g., release/xxxxx) will be created from the develop branch for planned releases.
+6. Release script(s) will be prepared and added to the release branch (located in the Release folder for each individual schema).
+7. A 'Release Implementer' will need to manually execute the Jenkins pipeline to deploy the release scripts to SIT, UAT, and PROD, with each respective pipeline executing the release script from the release branch.
+8. Once the deployment is successful, a PR# will be initiated to merge the release branch into the develop branch.
