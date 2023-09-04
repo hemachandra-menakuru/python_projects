@@ -1,65 +1,11 @@
-If the software code is not in sync between the SIT (System Integration Testing) and UAT (User Acceptance Testing) environments, it can introduce several risks and challenges. Here are some potential risks associated with code inconsistency between SIT and UAT:
-
-1. Unpredictable Behavior: Inconsistencies in the code between SIT and UAT can lead to unexpected behavior of the software. 
-This can result in discrepancies between the behavior observed during testing and the actual behavior experienced by end users.
-It becomes difficult to accurately assess the system's readiness for production.
-
-2. Failed Test Cases: 
-Test cases designed for SIT may not function correctly in the UAT environment if the code is not synchronized. 
-This can lead to failed tests, false positives, or false negatives during UAT, making it challenging to determine the true quality and readiness of the software.
-
-3. Difficulty in Issue Resolution: 
-When code inconsistencies exist, it becomes harder to identify the root cause of issues reported during testing. 
-Developers may spend more time investigating and resolving problems, leading to delays in bug fixes and potentially missing critical issues altogether.
-
-4. Risk of Regression:
-If the code in UAT is ahead of the code in SIT, it increases the risk of introducing new bugs or regressions when attempting to synchronize 
-the environments. Any changes made to the code in UAT without reflecting those changes in SIT can cause conflicts or break the existing functionality.
-
-5. Delayed Deployment: 
-Code inconsistencies between SIT and UAT may require additional time and effort to reconcile the differences and ensure both environments are aligned. This can lead to deployment delays, impacting project timelines and potentially frustrating stakeholders.
-
-6. Misalignment with User Expectations: 
-If the code in UAT differs from the code tested in SIT, the software's behavior may not align with user expectations. This can result in confusion, dissatisfaction, and potential rejection of the software by users during the UAT phase.
-
-7. Increased Maintenance Effort: 
-Maintaining code in multiple environments with inconsistent versions can be challenging. It requires additional effort to track changes, apply fixes, and ensure that any modifications made in one environment are properly synchronized with the other. This can lead to increased maintenance complexity and higher long-term costs.
-
-Time and Effort Overruns: Bypassing SIT and moving directly to UAT may initially save time, 
-but it can lead to time and effort overruns in the long run. 
-Undetected integration issues or functional problems discovered during UAT may require significant efforts to investigate, debug, and fix. T
-his can delay the UAT process, impact project timelines,and increase overall development and testing costs.
-
------------------=========
-
-If you bypass the code deployment to the SIT (System Integration Testing) environment and directly move to UAT (User Acceptance Testing), there are specific issues related to code deployment that you may encounter. Here are some of the code deployment issues associated with bypassing SIT and going directly to UAT:
-
-1. Incomplete or Incorrect Deployment: Without going through SIT, there is a higher risk of incomplete or incorrect code deployment to the UAT environment. SIT helps validate the deployment process and ensure that all necessary code changes, configurations, and dependencies are correctly deployed. Bypassing SIT increases the likelihood of missing or misconfigured components, leading to deployment failures or inconsistencies in the UAT environment.
-
-2. Dependency Issues: In complex software systems, dependencies between different components or modules are common. SIT allows for comprehensive testing of these dependencies and ensures that all required components are properly integrated and deployed. Bypassing SIT may result in missing or mismatched dependencies during the direct code deployment to UAT, leading to runtime errors, crashes, or incorrect behavior.
-
-3. Versioning and Compatibility Problems: SIT helps validate the compatibility of different code versions and ensures that the correct versions are deployed and tested together. By bypassing SIT, you risk deploying incompatible code versions to the UAT environment. This can cause conflicts, errors, or unexpected behavior due to differences in functionality or APIs between the code versions.
-
-4. Inadequate Rollback Plan: SIT is an opportunity to test the rollback plan for code deployments in case issues arise. By skipping SIT, you may miss the chance to validate and refine the rollback process. If problems occur during direct code deployment to UAT, you may not have a well-tested and reliable rollback plan, leading to difficulties in reverting to a stable state or extended downtime.
-
-5. Limited Environment Validation: SIT ensures that the code works correctly in an integrated system environment. By bypassing SIT, you may not fully validate the code's behavior, performance, or compatibility in the UAT environment. This can result in unexpected issues or suboptimal performance during UAT, affecting the user experience and potentially leading to delays or rework.
-
-6. Lack of Pre-Production Testing: SIT allows for testing in an environment that closely resembles the production environment. By bypassing SIT and directly deploying code to UAT, you miss the opportunity to perform pre-production testing. This testing is crucial to identify any production-specific issues, such as performance bottlenecks, configuration problems, or deployment-related challenges that may arise in the production environment.
-
-It's important to note that bypassing SIT and directly deploying code to UAT significantly increases the risk of encountering these issues during code deployment. Following established software development practices, including thorough testing in SIT, helps mitigate these risks and ensures a more reliable and successful code deployment process.
-
-Deployment Failures: Bypassing SIT and deploying the code directly to UAT increases the risk of deployment failures. SIT allows for validating the deployment process, ensuring that all necessary configurations, dependencies, and environment-specific requirements are properly set up. Without going through SIT, you may encounter deployment errors, missing or misconfigured components, or incompatible configurations when deploying the code to UAT.
-
-Inconsistent Environments: SIT helps align the development, testing, and UAT environments by ensuring that they are consistent in terms of code versions, configurations, and dependencies. Bypassing SIT can result in inconsistencies between these environments, leading to issues when deploying the code to UAT. Incompatible dependencies, missing configurations, or incorrect environment setups can cause errors or unexpected behavior.
-
-Difficult Issue Identification and Resolution: When encountering issues during direct code deployment to UAT without going through SIT, it becomes more challenging to identify and resolve the root causes of the problems. The lack of a dedicated testing phase like SIT makes it harder to isolate and debug issues, potentially leading to extended troubleshooting efforts and delays in resolving the problems.
-
-Compatibility Problems: Skipping SIT means the code may not be thoroughly tested for compatibility with other system components, frameworks, or dependencies. This can result in compatibility issues that may cause errors, crashes, or unexpected behavior during deployment to the UAT environment.
-
-Incomplete Deployment Validation: SIT provides a dedicated phase to validate the deployment process and ensure that all necessary configurations, settings, and dependencies are properly deployed. Bypassing SIT increases the risk of incomplete or incorrect deployment, resulting in missing components, misconfigured settings, or inconsistent environment setups.
-
-Limited Environment Validation: SIT allows for testing the code in an environment that closely resembles the production environment. By bypassing SIT, you miss the opportunity to validate the code's behavior and performance in a realistic setting, potentially leading to issues when the code is deployed to the UAT environment or later in the production environment.
-
-
-
-To mitigate these risks, it is crucial to maintain version control and ensure that code changes are appropriately synchronized between the SIT and UAT environments. This includes properly managing the deployment process and closely coordinating with development and testing teams to maintain code consistency throughout the software development lifecycle.
+All DDL scripts will modeled through ERWIN.
+Development will occur in a shared development database (DEV01/DEV02)
+Once the final version of a script has been generated from Erwin and tested in the development database, the process of getting the change into Github and SYST will likely to deployed manually and SIT,UAT and PROD will follow the below steps:
+a feature/  branch will be created off from develop  branch
+the script(s) are added to the feature branch
+tests will performed on DEV and SYST databases.
+a Pull Request is initiated to merge the feature branch into the develop  branch after successful completion of tests.
+a release/xxxxx branch will be created off from develop  branch for planned releases.
+a release script/s will be prepared and added to the release branch (in the Release folder for every individual schema)
+a 'Release Implementer' needs to manually run the Jenkins pipeline to deploy the release scripts to SIT,UAT and PROD (with the respective pipeline executing the release script from release branch)
+once the deployment successful, then a PR# is initiated to merge release branch into the develop branch.
