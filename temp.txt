@@ -37,3 +37,16 @@ A semantic version tag will be created once the test team is ready to pull chang
 If any issues raised during the system testing then create a bugfix\hotfix  branch off from core base develop  and follow the steps 2 to 4.
 After successful `syst`  tests and when test team is ready then create a Jira request to create release branch  `release_v1_0_0/release_name`  and this will be deployed to  all higher environments after successfully completion of each test phases `syst02` `uat02` `prod02`
 
+------------
+
+Here's the corrected version of your text in standard English:
+
+"The 'develop' branch serves as the central source code branch for all teams. All environmental branches are linked to specific Astronomer virtual instances, and changes are synchronized immediately to the Astronomer instance whenever a new commit occurs in the environment branch.
+
+Developers create new feature branches, such as 'feature/feature_name,' branching off from the team's 'develop' branch. After completing local development and local testing for the feature, they merge it into 'dev01' for unit testing.
+
+Upon successful unit testing, a Pull Request (PR#) is initiated for merging into the 'develop' branch. Ideally, two reviewers conduct a thorough peer review before proceeding with the merge into the core base.
+
+A semantic version tag is created when the testing team is prepared to pull the changes into the 'syst' environment. If any issues arise during system testing, a bugfix or hotfix branch is created from the 'develop' core base, following steps 2 to 4.
+
+After successful 'syst' tests and when the testing team is ready, a Jira request is submitted to create a release branch, such as 'release_v1_0_0/release_name.' This release is deployed to all higher environments after successful completion of each testing phase: 'syst02' → 'uat02' → 'prod02'."
