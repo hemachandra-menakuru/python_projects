@@ -49,4 +49,13 @@ Upon successful unit testing, a Pull Request (PR#) is initiated for merging into
 
 A semantic version tag is created when the testing team is prepared to pull the changes into the 'syst' environment. If any issues arise during system testing, a bugfix or hotfix branch is created from the 'develop' core base, following steps 2 to 4.
 
+=========
+
+
+To facilitate the development and deployment of these technologies, the project relies on Jenkins as its primary Continuous Integration and Continuous Deployment (CI/CD) tool. Jenkins is hosted on an EC2 instance within the Green Accounts environment. Within Jenkins, pipelines for Informatica and Snowflake have been meticulously implemented to streamline and automate various data-related processes.
+
+For version control and source code management, Git is the preferred tool employed for the FCH project. The project's source code is stored and managed on GitHub, which serves as the central repository for all these technologies.
+
+Within the FCH project, a standardized Git flow strategy has been adopted, with tailored adjustments to cater to the unique requirements of each technology. This approach enables efficient collaboration and ensures that the development and deployment processes are harmonized and aligned with project objecti
+
 After successful 'syst' tests and when the testing team is ready, a Jira request is submitted to create a release branch, such as 'release_v1_0_0/release_name.' This release is deployed to all higher environments after successful completion of each testing phase: 'syst02' → 'uat02' → 'prod02'."
