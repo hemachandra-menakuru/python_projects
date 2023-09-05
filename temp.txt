@@ -24,3 +24,16 @@ All DDL scripts will be modeled using ERWIN. Development will take place in a sh
 6. Release script(s) will be prepared and added to the release branch (located in the Release folder for each individual schema).
 7. A 'Release Implementer' will need to manually execute the Jenkins pipeline to deploy the release scripts to SIT, UAT, and PROD, with each respective pipeline executing the release script from the release branch.
 8. Once the deployment is successful, a PR# will be initiated to merge the release branch into the develop branch.
+
+
+-----------------------------
+
+The “develop” brabnch is the core source code branch for all teams.
+All environmental branches are linked to specific Astronomer virtual instances and by using the `git sync` utility whenever a new commit occurs to the environment branch those changes will immediately reflects to the Astronomer instance
+Developer creates a new feature `feature/feature_name`  branch off from team develop branch `develop` 
+After local development and local test completed for the feature, then merge into dev01  for unit testing.
+After successful unit test raise a PR#  will be raised to merge into develop  branch. Ideally two reviewers and perform a details level of peer-review before proceeding to merge into core base.
+A semantic version tag will be created once the test team is ready to pull changes to syst  environment. 
+If any issues raised during the system testing then create a bugfix\hotfix  branch off from core base develop  and follow the steps 2 to 4.
+After successful `syst`  tests and when test team is ready then create a Jira request to create release branch  `release_v1_0_0/release_name`  and this will be deployed to  all higher environments after successfully completion of each test phases `syst02` `uat02` `prod02`
+
