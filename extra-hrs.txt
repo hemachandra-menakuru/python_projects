@@ -1,0 +1,176 @@
+Extra Hours:
+
+
+
+====================================================================================
+18-Sep-2023 :  12 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+19-Sep-2023 :  12 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+20-Sep-2023 :  10 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+21-Sep-2023 :  14 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+
+====================================================================================
+12-Sep-2023 :  10 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+13-Sep-2023 :  12 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+14-Sep-2023 :  12 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+16-Sep-2023 :  8 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+17-Sep-2023 :  6 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+
+====================================================================================
+07-Sep-2023 :  12 Hrs   (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+08-Sep-2023 :  12 Hrs   (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+08-Sep-2023 :  8 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+09-Sep-2023 :  3 Hrs     (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+====================================================================================
+28-Aug-2023 :  14 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+29-Aug-2023 :  14 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+31-Aug-2023 :  12 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+01-Sep-2023 :  10 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+02-Sep-2023 :  8 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+03-Sep-2023 :  2 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+====================================================================================
+23-Aug-2023 :  12 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  )  
+24-Aug-2023 :  10 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+25-Aug-2023 :  12 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+26-Aug-2023 :  8 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+27-Aug-2023 :  3 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+====================================================================================
+14-Aug-2023 :  14 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+15-Aug-2023 :  10 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  )  
+16-Aug-2023 :  12 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+18-Aug-2023 :  12 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+19-Aug-2023 :  8 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  )  
+20-Aug-2023 :  5 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  )  
+====================================================================================
+07-Aug-2023 :  12 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+08-Aug-2023 :  10 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+09-Aug-2023 :  14 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+10-Aug-2023 :  10 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  )
+12-Aug-2023 :  2 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+13-Aug-2023 :  8 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  )  
+
+====================================================================================
+
+31-Jul-2023:  12 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+03-Aug-2023: 11 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+04-Aug-2023: 12 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+====================================================================================
+
+24-Jul-2023: 12 Hrs  (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+26-Jul-2023: 12 Hrs  (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+27-Jul-2023: 10 Hrs  (08:00 AM to 8:00 PM [UAT02&PROD02 Incremental Deployment and Support]  ) 
+28-Jul-2023: 14 Hrs  (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+29-Jul-2023: 8 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+30-Jul-2023: 4 Hrs    (08:00 AM to 8:00 PM  [UAT02&PROD02 Incremental Deployment and Support]  ) 
+====================================================================================
+18-Jul-2023: 10 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+19-Jul-2023: 13 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+21-Jul-2023: 12 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+22-Jul-2023: 10 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+23-Jul-2023: 12 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+====================================================================================
+16-Jul-2023: 8 Hrs  (08:00 AM to 8:00 PM    [SYST02&UAT02 Incremental Deployment and Support]  ) 
+15-Jul-2023: 8 Hrs  (08:00 AM to 8:00 PM    [SYST02&UAT02 Incremental Deployment and Support]  ) 
+14-Jul-2023: 10 Hrs  (08:00 AM to 8:00 PM    [SYST02&UAT02 Incremental Deployment and Support]  ) 
+13-Jul-2023: 14 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+12-Jul-2023: 12 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+11-Jul-2023: 10 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+====================================================================================
+04-Jul-2023: 10 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+07-Jul-2023: 14 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+08-Jul-2023: 6 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+09-Jul-2023: 10 Hrs  (08:00 AM to 8:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+
+====================================================================================
+26-Jun-2023: 13 Hrs  (08:00 AM to 06:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+29-Jun-2023: 10 Hrs  (08:00 AM to 06:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+01-Jul-2023: 8 Hrs     (08:00 AM to 06:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+02-Jul-2023: 10 Hrs  (08:00 AM to 06:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+
+====================================================================================
+19-Jun-2023: 10 Hrs  (8:30 AM to 10:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+21-Jun-2023: 10 Hrs  (8:30 AM to 10:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+24-Jun-2023: 10 Hrs  (8:30 AM to 10:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+25-Jun-2023: 8 Hrs  (10:00 AM to 06:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+
+====================================================================================
+
+13-Jun-2023: 14 Hrs  (8:30 AM to 10:00 PM  [UAT02 Incremental Deployment and Support]  ) 
+14-Jun-2023: 12 Hrs  (8:30 AM to 10:00 PM  [UAT02 Incremental Deployment and Support]  ) 
+15-Jun-2023: 14 Hrs  (8:30 AM to 10:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  )
+16-Jun-2023: 10 Hrs  (8:30 AM to 10:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  )
+17-Jun-2023: 12 Hrs  (8:30 AM to 10:00 PM  [SYST02&UAT02 Incremental Deployment and Support]  ) 
+
+
+====================================================================================
+05-Jun-2023: 4Hrs (9:00 AM to 6:00 PM) ( [UAT02 Support]  ) 
+06-Jun-2023: 12Hrs (8:00 AM to 22:00 PM) ( [UAT02 Deployments]  ) 
+====================================================================================
+
+31-May-2023: 14 Hrs  (8:30 AM to 10:00 PM  [UAT02 Deployment]  ) 
+01-Jun-2023: 12 Hrs  (8:30 AM to 10:00 PM  [SYST02 Support]  ) 
+02-Jun-2023: 12 Hrs  (8:30 AM to 10:00 PM  [SYST02 Support]  ) 
+03-Jun-2023: 8Hrs (9:00 AM to 6:00 PM) ( [UAT02 Support]  ) 
+04-Jun-2023: 8Hrs (9:00 AM to 6:00 PM) ( [UAT02 Support]  ) 
+
+
+====================================================================================
+22-May-2023: 11 Hrs  (8:30 AM to 10:00 PM  [SYST02 Support]  ) 
+23-May-2023: 10 Hrs  (8:30 AM to 10:00 PM  [SYST02 Support]  ) 
+26-May-2023: 10 Hrs  (8:30 AM to 10:00 PM  [SYST02 Support]  ) 
+27-May-2023: 4 Hrs    (9:30 AM to 2:00 PM  [SYST02 Support]  ) 
+====================================================================================
+18-May-2023: 14 Hrs (8:00 AM to 11:30 PM) [SYST02 Environment setup])
+20-May-2023: 4 Hrs (7:30AM to 11:30 AM)  [SYST02 Support])
+====================================================================================
+
+09-May-2023: 11 Hrs (8:30 AM to 11:00 PM) [ SIT01- Day-4 run Support]
+11-May-2023: 13 Hrs (8:30 AM to 11:00 PM) [SIT-1: Support and UAT02 env setup]
+
+====================================================================================
+02-May-2023: 12 Hrs (8:30 AM to 11:30 PM) [ SIT01- Day-1 run Support]
+03-May-2023: 11 Hrs (8:30 AM to 10:30 PM) [ SIT01- Day-1 run Support]
+04-May-2023: 11 Hrs (8:30 AM to 10:30 PM) [ SIT01- Day-1 run Support]
+06-May-2023: 10 Hrs (8:30 AM to 10:30 PM) [ SYST02 Deployment and SIT01- Day-1 run Support]
+07-May-2023: 8 Hrs (8:30 AM to 10:30 PM)  [ SYST02 Deployment and SIT01- Day-1 run Support]
+====================================================================================
+24-Apr-2023 : 12 Hrs  (8:30 AM to 11:30 PM)
+25-Apr-2023:  6 Hrs (7:30 AM to 3:00 PM)
+28-Apr-2023:  12 Hrs (8:00 AM to 11:00 PM)
+29-Apr-2023:  8 Hrs (7:30 To 4:00 PM)
+30-Apr-2023:  8 Hrs (8:30 To 5:00 PM)
+====================================================================================
+14-Apr-2023 : 12 Hrs (8:30 AM to 11:30 PM)
+15-Apr-2023 : 8 Hrs (8:00AM to 5:30 PM)
+16-Apr-2023 : 8 Hrs (6:30AM to 4:00 PM)
+====================================================================================
+03-Apr-2023 : 12 Hrs (8:30 AM to 9:00 PM)
+05-Apr-2023 : 14 Hrs (8:30 AM to 11:00 PM)
+09-Apr-2023 : 12 Hrs  (08:00 AM to 6:00 PM)
+10-Apr-2023 : 12 Hrs (8:30 AM to 6:30 PM)
+====================================================================================
+
+31-Mar-2023 : 14 Hrs (8:30 AM To 11:00 PM)
+01-Apr-2023:  8 Hrs (10:00 AM To 7:00 PM)
+
+====================================================================================
+23-Mar-2023 : 14 Hrs (8:30 AM to 10:00 PM)
+25-Mar-2023 : 8:00 Hr (7:00 AM to 6:00 PM)
+====================================================================================
+13-Mar-2023 : 8 Hrs (8:30 AM to 5:00 PM)
+14-Mar-2023 : 12 Hrs (8:00 AM To 09:00 PM)
+15-Mar-2023 : 14 Hrs (07:00AM to 10:00 PM)
+16-Mar-2023 : 12 Hrs (7:30AM to 10:00 PM)
+17-Mar-2023 : 12 Hrs (8:30AM to 09:30 PM)
+18-Mar-2023 : 14 Hrs (8:00 AM to 11:00 PM )
+19-Mar-2023:  15 Hrs (7:30 AM to 11:30 PM)
+                   ------------ 87
+====================================================================================
+06-Mar-2023: 8 Hrs
+07-Mar-2023: 8 Hrs
+08-Mar-2023 : 12 Hrs
+09-Mar-2023 : 8 Hrs
+10-Mar-2023 : 10 Hrs
+11-Mar-2023 : 8 Hrs
+12-Mar-2023 : 10 Hrs
+                            ------------- 64
+====================================================================================
