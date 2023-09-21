@@ -1,0 +1,50 @@
+Feature and release/tag based development and deployments :
+
+Development, Unit Testing and System Testing process:
+
+Creating NEW feature/bugfix Branch:
+
+Always create a NEW feature branch off from your core base develop branch  `develop` .
+Feature Branch Naming Standard : Feature branch keyword starts with `feature/` followed by the jira story number and short name
+            feature/{jira ref#}-{shortname}
+
+            Example : feature/BSGDW-23576-base-channel-full
+
+Steps:
+
+One feature : One Developer : (Ideal case)
+
+Developer creates a new feature `feature/feature_name`  branch off from team develop branch `develop` .
+After local development and local test completed for the feature, then merge into dev01  for unit testing.
+After successful unit test raise a PR#  to merge into develop  branch. Ideally two reviewers and perform a details level of peer-review before proceeding to merge into core base.
+Create a semantic version tag when the test team is ready to pull changes to syst  environment. Raise a jira request to Hemachandra Menakuru or Satish Doddi to create a tags and PUSH to syst  environment branch.
+If any issues raised during the system testing then create a bugfix\hotfix  branch off from core base develop  and follow the steps 2 to 4.
+Developer may proceed to delete their own feature or bugfix branch/s from local and remote.
+Semantic version tags naming standards:
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+MAJOR version when you make reasonably big releases
+MINOR version when you add NEW functionality for couple of components
+PATCH version when you make bug fixes and light weight enhancements
+
+Example: v0.1.1
+
+
+
+Deployment to higher environments:
+
+Request repository maintainer to create a Release branch `release_v1_0_0/release_name`  from specific tag  version (If partial releases the utilize git select or cherry-pick for target objects deployment) .
+
+This release branch will be deployed to all higher test environments including production (SIT, UAT and PROD). If any issue/s in any of the test environments, create a bugfix\hotfix  branch off from core base develop and follow the above steps 2 to 4
+
+SIT Environment :
+
+After successful `syst`  tests and when test team is ready then create a Jira request to create release branch  `release_v1_0_0/release_name`  branch and deploy to  `sit01` environment.
+If any issues identified during the `sit` cycle , create a bug fix branch (`bufix_sit/XXXXXXX) off from develop branch and follow the above steps 2 to 4
+UAT Environment :
+
+After successful `sit` tests then code is ready for shippable to `uat01` environment. Create a Jira task to deploy  `release_v1_0_0/release_name`  branch  to `uat01` environment.
+If any issues identified during the `uat` cycle , create a bug fix branch (`bufix_sit/XXXXXXX) off from develop branch and follow the above steps 2 to 4
+PROD Environment :
+
+After successful `uat` tests then code is ready for shippable to `PROD` environment. Create a Jira task to deploy  `release_v1_0_0/release_name`  branch  to `main` prod environment.
