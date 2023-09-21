@@ -1,0 +1,173 @@
+
+User name                    823095
+Full Name                    Hemachandra Menakuru
+Comment                      LM-R913H87B - 
+User's comment               
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              30/09/2023 11:00:00 pm
+
+Password last set            19/07/2023 2:07:23 pm
+Password expires             17/10/2023 2:07:23 pm
+Password changeable          20/07/2023 2:07:23 pm
+
+bnznag\823095
+
+GROUP INFORMATION
+-----------------
+
+Group Name                                              Type             SID                                            Attributes                                                     
+======================================================= ================ ============================================== ===============================================================
+Everyone                                                Well-known group S-1-1-0                                        Mandatory group, Enabled by default, Enabled group             
+BUILTIN\Remote Desktop Users                            Alias            S-1-5-32-555                                   Mandatory group, Enabled by default, Enabled group             
+BUILTIN\Users                                           Alias            S-1-5-32-545                                   Mandatory group, Enabled by default, Enabled group             
+NT AUTHORITY\INTERACTIVE                                Well-known group S-1-5-4                                        Mandatory group, Enabled by default, Enabled group             
+CONSOLE LOGON                                           Well-known group S-1-2-1                                        Mandatory group, Enabled by default, Enabled group             
+NT AUTHORITY\Authenticated Users                        Well-known group S-1-5-11                                       Mandatory group, Enabled by default, Enabled group             
+NT AUTHORITY\This Organization                          Well-known group S-1-5-15                                       Mandatory group, Enabled by default, Enabled group             
+LOCAL                                                   Well-known group S-1-2-0                                        Mandatory group, Enabled by default, Enabled group             
+BNZNAG\A_BNZ_Confluence_I&O                             Group            S-1-5-21-117609710-1767777339-682003330-106873 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\Drive Mapping H - Corporate - HOME               Group            S-1-5-21-117609710-1767777339-682003330-94713  Mandatory group, Enabled by default, Enabled group             
+BNZNAG\A_BNZ_Confluence_Digital                         Group            S-1-5-21-117609710-1767777339-682003330-105775 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\U_Azure_MFA_Server_Users                         Group            S-1-5-21-117609710-1767777339-682003330-118934 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\O_MDE_Description_W                              Group            S-1-5-21-117609710-1767777339-682003330-26080  Mandatory group, Enabled by default, Enabled group             
+BNZNAG\U_CITRIX_RAS_ACCESS                              Group            S-1-5-21-117609710-1767777339-682003330-80203  Mandatory group, Enabled by default, Enabled group             
+BNZNAG\Drive Mapping H - WLGFILE4 - HOME                Group            S-1-5-21-117609710-1767777339-682003330-33772  Mandatory group, Enabled by default, Enabled group             
+BNZNAG\U_O365_Base_Plus_Teams                           Group            S-1-5-21-117609710-1767777339-682003330-127779 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\U_CITRIX_PPTE_XENAPP_ACCESS                      Group            S-1-5-21-117609710-1767777339-682003330-98756  Mandatory group, Enabled by default, Enabled group             
+BNZNAG\Drive Mapping G - WLGFILE2 BNZT Groups           Group            S-1-5-21-117609710-1767777339-682003330-36312  Mandatory group, Enabled by default, Enabled group             
+BNZNAG\U_O365_Mobile_Internet_ecoPortal                 Group            S-1-5-21-117609710-1767777339-682003330-155308 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\Drive Mapping N - WLGFILE2 BNZ Digital Share     Group            S-1-5-21-117609710-1767777339-682003330-107994 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\BNZ_Jenkins_Developers                           Group            S-1-5-21-117609710-1767777339-682003330-82623  Mandatory group, Enabled by default, Enabled group             
+BNZNAG\L_BI_Tableau_Interactor_Digital                  Group            S-1-5-21-117609710-1767777339-682003330-111616 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\Entrust WNES Access                              Group            S-1-5-21-117609710-1767777339-682003330-138920 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\U_O365_Mobile_Mail_AD                            Group            S-1-5-21-117609710-1767777339-682003330-112435 Mandatory group, Enabled by default, Enabled group             
+BNZNAG\802.1x Authentication group                      Group            S-1-5-21-117609710-1767777339-682003330-70418  Mandatory group, Enabled by default, Enabled group             
+BNZNAG\A_BNZ_GIT_Digital                                Group            S-1-5-21-117609710-1767777339-682003330-102242 Mandatory group, Enabled by default, Enabled group             
+Authentication authority asserted identity              Well-known group S-1-18-1                                       Mandatory group, Enabled by default, Enabled group             
+BNZNAG\A_BNZ_Confluence_DAP_User                        Alias            S-1-5-21-117609710-1767777339-682003330-231675 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_r_auto_oli_grp                                 Alias            S-1-5-21-117609710-1767777339-682003330-243149 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_GitHub_Enterprise_SSO                          Alias            S-1-5-21-117609710-1767777339-682003330-217406 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_Signavio_Employee_Prod                         Alias            S-1-5-21-117609710-1767777339-682003330-192093 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\G_WLGFILE2_BNZT Groups_M                         Alias            S-1-5-21-117609710-1767777339-682003330-79063  Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BNZ_JIRA                                       Alias            S-1-5-21-117609710-1767777339-682003330-139634 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_ADMIN_PROD                              Alias            S-1-5-21-117609710-1767777339-682003330-227604 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_CyberArk_Users_Prod                            Alias            S-1-5-21-117609710-1767777339-682003330-172382 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CST_Segmentation_R_NP                            Alias            S-1-5-21-117609710-1767777339-682003330-128151 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_REST_IdentityAccess_DEV_Modify                 Alias            S-1-5-21-117609710-1767777339-682003330-122981 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_Azure_AKS_Astronomer_DAP_NonProd               Alias            S-1-5-21-117609710-1767777339-682003330-227121 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\TASK_Users_Desc_OU BNZ Vendors                   Alias            S-1-5-21-117609710-1767777339-682003330-244122 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\L_BI_Tableau_Interactor_Enterprise_Production    Alias            S-1-5-21-117609710-1767777339-682003330-126195 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_Azure_ServiceNow_PROD_Employee                 Alias            S-1-5-21-117609710-1767777339-682003330-153843 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_MicrosoftInformationProtection_MandatoryLabels Alias            S-1-5-21-117609710-1767777339-682003330-213531 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_ADMIN_SYST                              Alias            S-1-5-21-117609710-1767777339-682003330-224582 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SAP-Fiori-Prod-SSO_Login_PROD                  Alias            S-1-5-21-117609710-1767777339-682003330-217321 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Support_UAT             Alias            S-1-5-21-117609710-1767777339-682003330-213199 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\TASK_Comp_Desc_OU Workstations                   Alias            S-1-5-21-117609710-1767777339-682003330-127451 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Support_SIT             Alias            S-1-5-21-117609710-1767777339-682003330-213201 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CAS_CustomerApplication_R_NP                     Alias            S-1-5-21-117609710-1767777339-682003330-128171 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_CQIB_Finsia_Go1_SSO                            Alias            S-1-5-21-117609710-1767777339-682003330-210258 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_LinkedinLearning_User                          Alias            S-1-5-21-117609710-1767777339-682003330-153848 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_GitHub_Enterprise_ProjectAdmin                 Alias            S-1-5-21-117609710-1767777339-682003330-223902 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_OrbitTravel_User                               Alias            S-1-5-21-117609710-1767777339-682003330-211389 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_DomainUsers_UAT                Alias            S-1-5-21-117609710-1767777339-682003330-213210 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_DomainUsers_SIT                Alias            S-1-5-21-117609710-1767777339-682003330-213273 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\BNZ-GitHub-Users                                 Alias            S-1-5-21-117609710-1767777339-682003330-161052 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_SAS_DEVELOPER_DEV                       Alias            S-1-5-21-117609710-1767777339-682003330-245559 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CAS_ArrangementFinancials_R_NP                   Alias            S-1-5-21-117609710-1767777339-682003330-128163 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_knowbe4_SSO                                    Alias            S-1-5-21-117609710-1767777339-682003330-202343 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_METRICSTREAM_GAITS_ISSUEOWNER_BNZ              Alias            S-1-5-21-117609710-1767777339-682003330-192037 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_Azure_AKS_Astronomer_DAP_Prod                  Alias            S-1-5-21-117609710-1767777339-682003330-227119 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CST_W_NP                                         Alias            S-1-5-21-117609710-1767777339-682003330-128150 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_ADMIN_SIT                               Alias            S-1-5-21-117609710-1767777339-682003330-224590 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\G_WLGFILE2_BNZ Digital Share_M                   Alias            S-1-5-21-117609710-1767777339-682003330-107996 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_RDS_Business_Prod_Users                        Alias            S-1-5-21-117609710-1767777339-682003330-114417 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_RSAArcher_GeneralUser_Prod                     Alias            S-1-5-21-117609710-1767777339-682003330-190417 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CSTE_W_P                                         Alias            S-1-5-21-117609710-1767777339-682003330-128303 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CAS_Arrangement_R_NP                             Alias            S-1-5-21-117609710-1767777339-682003330-128167 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Support_SYST            Alias            S-1-5-21-117609710-1767777339-682003330-213200 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\MRK_R_P                                          Alias            S-1-5-21-117609710-1767777339-682003330-128336 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\G_SAKLFILE2_HotDocs_M                            Alias            S-1-5-21-117609710-1767777339-682003330-79171  Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_DEI_FCH_Support_Prod                       Alias            S-1-5-21-117609710-1767777339-682003330-221973 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\G_WLGFILE5_HotDocs_M                             Alias            S-1-5-21-117609710-1767777339-682003330-79946  Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_SUPPORT_SYST                            Alias            S-1-5-21-117609710-1767777339-682003330-224585 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\BNZ-Application-ServiceNOW-AllUsers              Alias            S-1-5-21-117609710-1767777339-682003330-163903 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_MIRO_QPS_PARTICIPANT_MEMBER                    Alias            S-1-5-21-117609710-1767777339-682003330-223020 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_HybridCloud_User                               Alias            S-1-5-21-117609710-1767777339-682003330-202384 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_DEI_Support_Prod                           Alias            S-1-5-21-117609710-1767777339-682003330-213198 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_CONSUMER_UAT                            Alias            S-1-5-21-117609710-1767777339-682003330-227601 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_Azure_AKS_Astronomer_DAP_PreProd               Alias            S-1-5-21-117609710-1767777339-682003330-227120 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\Tahi-IT-Mobile User (Agent)                      Alias            S-1-5-21-117609710-1767777339-682003330-193821 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Support_DEV             Alias            S-1-5-21-117609710-1767777339-682003330-213202 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CAS_R_NP                                         Alias            S-1-5-21-117609710-1767777339-682003330-128161 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_SAS_ADMIN_SYST                          Alias            S-1-5-21-117609710-1767777339-682003330-245569 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Developers_DEV          Alias            S-1-5-21-117609710-1767777339-682003330-213293 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_DEVELOPER_DEV                           Alias            S-1-5-21-117609710-1767777339-682003330-228148 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BNZ_Confluence                                 Alias            S-1-5-21-117609710-1767777339-682003330-119491 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_REST_SearchCustomer_DEV_Read                   Alias            S-1-5-21-117609710-1767777339-682003330-122983 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_CITRIX_RAS_ACCESS                              Alias            S-1-5-21-117609710-1767777339-682003330-80204  Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\INORG_R_P                                        Alias            S-1-5-21-117609710-1767777339-682003330-128420 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_Azure_AKS_PROD                                 Alias            S-1-5-21-117609710-1767777339-682003330-227519 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_ADMIN_UAT                               Alias            S-1-5-21-117609710-1767777339-682003330-224597 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\RSK_CustomerPricing_R_P                          Alias            S-1-5-21-117609710-1767777339-682003330-136169 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\INORG_W_P                                        Alias            S-1-5-21-117609710-1767777339-682003330-128421 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\RSK_CustomerPricing_W_P                          Alias            S-1-5-21-117609710-1767777339-682003330-136170 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\RSK_CustomerRisk_R_P                             Alias            S-1-5-21-117609710-1767777339-682003330-128384 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_REST_IdentityAccess_DEV_Read                   Alias            S-1-5-21-117609710-1767777339-682003330-122979 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CST_R_NP                                         Alias            S-1-5-21-117609710-1767777339-682003330-128149 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_Jenkins_FCH_App_Deploy_Syst                Alias            S-1-5-21-117609710-1767777339-682003330-245333 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_Jenkins_FCH_App_Deploy_Dev01               Alias            S-1-5-21-117609710-1767777339-682003330-231987 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_REST_IdentityAccess_DEV_Admin                  Alias            S-1-5-21-117609710-1767777339-682003330-122982 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BNZ_Confluence_BS11_Author                     Alias            S-1-5-21-117609710-1767777339-682003330-144062 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Lead_SIT                Alias            S-1-5-21-117609710-1767777339-682003330-213207 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\U_Contractor_Allow External Email Permanent      Alias            S-1-5-21-117609710-1767777339-682003330-226846 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SPK_STD_USER                                   Alias            S-1-5-21-117609710-1767777339-682003330-94122  Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_SUPPORT_SIT                             Alias            S-1-5-21-117609710-1767777339-682003330-224592 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\G_WLGFILE5_CCCW_Docs_M                           Alias            S-1-5-21-117609710-1767777339-682003330-79935  Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\MRK_W_P                                          Alias            S-1-5-21-117609710-1767777339-682003330-128337 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_Jenkins_FCH_App_Deploy_Uat01               Alias            S-1-5-21-117609710-1767777339-682003330-231968 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Lead_DEV                Alias            S-1-5-21-117609710-1767777339-682003330-213208 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\L_BI_Tableau_Interactor_Enterprise_Sandpit       Alias            S-1-5-21-117609710-1767777339-682003330-126198 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_Jenkins_FCH_App_Deploy_Prod                Alias            S-1-5-21-117609710-1767777339-682003330-228277 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\BNZ-Application-ServiceNOW-Resolver              Alias            S-1-5-21-117609710-1767777339-682003330-154042 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_CONSUMER_SYST                           Alias            S-1-5-21-117609710-1767777339-682003330-224587 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_OLI_K2                                         Alias            S-1-5-21-117609710-1767777339-682003330-147016 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_Azure_AKS_Astronomer_DAP_NonProd_Admin         Alias            S-1-5-21-117609710-1767777339-682003330-227117 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\TASK_Users_Desc_OU BNZ Users                     Alias            S-1-5-21-117609710-1767777339-682003330-129963 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_AG5_PortfolioUser                              Alias            S-1-5-21-117609710-1767777339-682003330-248421 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CSTE_R_P                                         Alias            S-1-5-21-117609710-1767777339-682003330-128302 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_Prod_DEI_DomainUsers                       Alias            S-1-5-21-117609710-1767777339-682003330-213209 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_WSRED_ADMIN_SYST                        Alias            S-1-5-21-117609710-1767777339-682003330-245583 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_MyApps_Mandatory                               Alias            S-1-5-21-117609710-1767777339-682003330-243272 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\BNZ-Application-ServiceNOW-Problem-Champion      Alias            S-1-5-21-117609710-1767777339-682003330-154037 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_MicrosoftInformationProtection_OptionalLabels  Alias            S-1-5-21-117609710-1767777339-682003330-201233 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_DomainUsers_SYST               Alias            S-1-5-21-117609710-1767777339-682003330-213274 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Lead_UAT                Alias            S-1-5-21-117609710-1767777339-682003330-213206 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_Jenkins_FCH_App_Deploy_Sit                 Alias            S-1-5-21-117609710-1767777339-682003330-227578 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Developers_SIT          Alias            S-1-5-21-117609710-1767777339-682003330-213292 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\BNZ-Application-ServiceNOW-Read-Only             Alias            S-1-5-21-117609710-1767777339-682003330-154043 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_OLI_CREATOR_GENERAL                            Alias            S-1-5-21-117609710-1767777339-682003330-204229 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_SAS_ADMIN_DEV                           Alias            S-1-5-21-117609710-1767777339-682003330-245561 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\U_TAKLXAQ01_RemoteDesktopUsers                   Alias            S-1-5-21-117609710-1767777339-682003330-106654 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\CSTE_R_NP                                        Alias            S-1-5-21-117609710-1767777339-682003330-128173 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_Azure_AKS_PPTE                                 Alias            S-1-5-21-117609710-1767777339-682003330-227516 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\MDE Web WhoAmI                                   Alias            S-1-5-21-117609710-1767777339-682003330-25810  Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Developers_SYST         Alias            S-1-5-21-117609710-1767777339-682003330-213291 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_Jenkins_FCH_App_Deploy_Uat                 Alias            S-1-5-21-117609710-1767777339-682003330-245332 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_xMatters_PROD - Standard Access                Alias            S-1-5-21-117609710-1767777339-682003330-218257 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_r_auto_so_grp                                  Alias            S-1-5-21-117609710-1767777339-682003330-243168 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SailPoint_Production Access                    Alias            S-1-5-21-117609710-1767777339-682003330-127217 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\R_AUTO_S&O                                       Alias            S-1-5-21-117609710-1767777339-682003330-77723  Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_FCH_CZ_Lead_SYST               Alias            S-1-5-21-117609710-1767777339-682003330-213205 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_ADMIN_DEV                               Alias            S-1-5-21-117609710-1767777339-682003330-228151 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_KnowBe4_User                                   Alias            S-1-5-21-117609710-1767777339-682003330-207862 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_Jenkins_FCH_App_Deploy_Dev                 Alias            S-1-5-21-117609710-1767777339-682003330-245334 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_OneTrust_SSO_PROD                              Alias            S-1-5-21-117609710-1767777339-682003330-215647 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_BDH_NonProd_DEI_DomainUsers_DEV                Alias            S-1-5-21-117609710-1767777339-682003330-213270 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_WSRED_ADMIN_DEV                         Alias            S-1-5-21-117609710-1767777339-682003330-245582 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\RSK_CustomerRisk_W_P                             Alias            S-1-5-21-117609710-1767777339-682003330-128385 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_CyberArk_USR_22823095_Access                   Alias            S-1-5-21-117609710-1767777339-682003330-242660 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\U_Contractor_Exclude External Email              Alias            S-1-5-21-117609710-1767777339-682003330-224456 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_SF_FCH_WSRED_DEVELOPER_DEV                     Alias            S-1-5-21-117609710-1767777339-682003330-245580 Mandatory group, Enabled by default, Enabled group, Local Group
+BNZNAG\A_DYNA_STD_USER                                  Alias            S-1-5-21-117609710-1767777339-682003330-116004 Mandatory group, Enabled by default, Enabled group, Local Group
+Mandatory Label\Medium Mandatory Level                  Label            S-1-16-8192                                                                                                   
