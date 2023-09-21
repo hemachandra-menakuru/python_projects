@@ -1,0 +1,35 @@
+The Snowflake pipeline is intentionally designed with a high level of privileges and access to perform various administrative actions within the database. Granting these privileges to non-administrative users or individuals who are not thoroughly familiar with the system poses significant risks.
+
+By allowing non-admin people to run the pipelines, they would have the ability to execute any action permitted by the pipeline scripts. This includes performing critical operations such as creating, modifying, or deleting database objects, altering permissions and access controls, and potentially affecting the integrity of the data.
+
+Without the necessary expertise and understanding of the underlying systems and database structures, non-admin users may inadvertently execute commands or operations that could have unintended consequences. These unintended actions might lead to data corruption, unauthorized access, or disruption of critical business processes.
+
+Additionally, non-admin users may lack the experience and knowledge required to effectively troubleshoot issues or interpret pipeline logs, increasing the chances of errors going unnoticed or unresolved. This limited access to logs in Jenkins pipelines further complicates the ability to identify and rectify problems in a timely manner.
+
+Considering these risks, it is crucial to carefully evaluate and limit the access and privileges granted to non-administrative users when using the Snowflake pipeline. Implementing proper access controls, user training, and thorough testing of pipeline scripts are essential to mitigate potential risks and ensure the integrity and security of the system.
+
+-----------
+
+Certainly! Here's the modified version based on the given context:
+
+The current Snowflake pipelines are specifically designed to facilitate Continuous Integration/Continuous Deployment (CICD) processes, granting them elevated privileges over database objects. These pipelines serve a generic purpose, providing a standardized approach to deployment activities across different projects and tasks.
+
+To enable cloning and restoring activities, we have made specific modifications to the pipeline scripts. However, it is important to note that these modifications require deployment through ADMIN roles. Allowing multiple non-administrative users to perform administrative tasks poses a greater risk due to the potential for unauthorized or unintended actions. The use of ADMIN roles introduces a higher level of privileges, increasing the likelihood of adverse consequences if proper caution is not exercised.
+
+In the event of any issues or unforeseen data anomalies during the deployment process, tracing the logs to identify the root cause becomes challenging. This limited visibility can result in increased downtime as additional efforts are required for database recovery and troubleshooting. It's important to acknowledge these limitations when using the pipelines for administrative tasks.
+
+Despite these limitations, we are utilizing the CICD pipelines for various purposes to meet our project timelines. However, it is important to highlight that these pipelines are not fully automated and may involve multiple steps to perform our tasks effectively. We ensure that at least one team member is always available during batch runtimes to take backups and perform restores, ensuring data protection and facilitating quick recovery if necessary.
+
+Overall, we have not encountered any significant time lagging or blockers while utilizing these pipelines. However, we remain vigilant and proactive in addressing any potential issues or challenges that may arise during the deployment process.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The current Snowflake pipelines are designed for Continuous Integration/Continuous Deployment (CI/CD) processes, granting elevated privileges over database objects. 
+These pipelines, referred to as MVP (Minimal Viable Products), offer a general approach for deploying activities across Snowflake databases. 
+It's important to note that these pipelines are not tailored for specific tasks and they are not fully automated solutions with a single click/button execution. 
+As we rely on BDH to develop new pipelines customized to specific needs, which may take several quarters to deliver, we have made adjustments to SQL commands and scripts to accommodate CLONE/RESTORE activities and they should only be executed by users with ADMIN role access.
+Allowing non-administrative users to perform ADMIN-related tasks poses significant risks. While unintentional, incorrect execution or improper parameters in the pipelines, along with unforeseen issues, can lead to the loss of objects or schemas, causing disruptions in critical processes and potential data inconsistencies. 
+Identifying the root cause and rectifying the database with limited GUI access for users can be challenging and time-consuming.
+In the future, it is essential to implement new capabilities that provide restricted privileges and options for the pipelines to minimize disruptions. 
+We are consistently available online, via text, or through calls during scheduled batch run times as specified in the run sheet , to perform backups and restores. Therefore, I do not foresee these tasks causing any delays in completing the batches on time.

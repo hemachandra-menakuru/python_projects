@@ -1,0 +1,61 @@
+All DDL scripts will modeled through ERWIN.
+Development will occur in a shared development database (DEV01/DEV02)
+Once the final version of a script has been generated from Erwin and tested in the development database, the process of getting the change into Github and SYST will likely to deployed manually and SIT,UAT and PROD will follow the below steps:
+a feature/  branch will be created off from develop  branch
+the script(s) are added to the feature branch
+tests will performed on DEV and SYST databases.
+a Pull Request is initiated to merge the feature branch into the develop  branch after successful completion of tests.
+a release/xxxxx branch will be created off from develop  branch for planned releases.
+a release script/s will be prepared and added to the release branch (in the Release folder for every individual schema)
+a 'Release Implementer' needs to manually run the Jenkins pipeline to deploy the release scripts to SIT,UAT and PROD (with the respective pipeline executing the release script from release branch)
+once the deployment successful, then a PR# is initiated to merge release branch into the develop branch.
+
+
+-------
+corrected version
+-----
+All DDL scripts will be modeled using ERWIN. Development will take place in a shared development database (DEV01/DEV02). Once the final version of a script has been generated from ERWIN and tested in the development database, the process of incorporating the changes into GitHub and SYST will likely be carried out manually. SIT, UAT, and PROD will follow the steps outlined below:
+
+1. A feature branch will be created from the develop branch.
+2. The script(s) will be added to the feature branch.
+3. Tests will be performed on the DEV and SYST databases.
+4. A Pull Request will be initiated to merge the feature branch into the develop branch after the successful completion of tests.
+5. A release branch (e.g., release/xxxxx) will be created from the develop branch for planned releases.
+6. Release script(s) will be prepared and added to the release branch (located in the Release folder for each individual schema).
+7. A 'Release Implementer' will need to manually execute the Jenkins pipeline to deploy the release scripts to SIT, UAT, and PROD, with each respective pipeline executing the release script from the release branch.
+8. Once the deployment is successful, a PR# will be initiated to merge the release branch into the develop branch.
+
+
+-----------------------------
+
+The “develop” brabnch is the core source code branch for all teams.
+All environmental branches are linked to specific Astronomer virtual instances and by using the `git sync` utility whenever a new commit occurs to the environment branch those changes will immediately reflects to the Astronomer instance
+Developer creates a new feature `feature/feature_name`  branch off from team develop branch `develop` 
+After local development and local test completed for the feature, then merge into dev01  for unit testing.
+After successful unit test raise a PR#  will be raised to merge into develop  branch. Ideally two reviewers and perform a details level of peer-review before proceeding to merge into core base.
+A semantic version tag will be created once the test team is ready to pull changes to syst  environment. 
+If any issues raised during the system testing then create a bugfix\hotfix  branch off from core base develop  and follow the steps 2 to 4.
+After successful `syst`  tests and when test team is ready then create a Jira request to create release branch  `release_v1_0_0/release_name`  and this will be deployed to  all higher environments after successfully completion of each test phases `syst02` `uat02` `prod02`
+
+------------
+
+Here's the corrected version of your text in standard English:
+
+"The 'develop' branch serves as the central source code branch for all teams. All environmental branches are linked to specific Astronomer virtual instances, and changes are synchronized immediately to the Astronomer instance whenever a new commit occurs in the environment branch.
+
+Developers create new feature branches, such as 'feature/feature_name,' branching off from the team's 'develop' branch. After completing local development and local testing for the feature, they merge it into 'dev01' for unit testing.
+
+Upon successful unit testing, a Pull Request (PR#) is initiated for merging into the 'develop' branch. Ideally, two reviewers conduct a thorough peer review before proceeding with the merge into the core base.
+
+A semantic version tag is created when the testing team is prepared to pull the changes into the 'syst' environment. If any issues arise during system testing, a bugfix or hotfix branch is created from the 'develop' core base, following steps 2 to 4.
+
+=========
+
+
+To facilitate the development and deployment of these technologies, the project relies on Jenkins as its primary Continuous Integration and Continuous Deployment (CI/CD) tool. Jenkins is hosted on an EC2 instance within the Green Accounts environment. Within Jenkins, pipelines for Informatica and Snowflake have been meticulously implemented to streamline and automate various data-related processes.
+
+For version control and source code management, Git is the preferred tool employed for the FCH project. The project's source code is stored and managed on GitHub, which serves as the central repository for all these technologies.
+
+Within the FCH project, a standardized Git flow strategy has been adopted, with tailored adjustments to cater to the unique requirements of each technology. This approach enables efficient collaboration and ensures that the development and deployment processes are harmonized and aligned with project objecti
+
+After successful 'syst' tests and when the testing team is ready, a Jira request is submitted to create a release branch, such as 'release_v1_0_0/release_name.' This release is deployed to all higher environments after successful completion of each testing phase: 'syst02' → 'uat02' → 'prod02'."
