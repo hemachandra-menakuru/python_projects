@@ -1,0 +1,285 @@
+
+
+---- GIT Quick cheet sheet -------------------
+
+git clone -v https://github.com/bnz-dap/fch-snowflake-db.git
+
+git clone -v https://github.com/bnz-dap/bdh-astronomer-airflow-dags.git
+
+----------------------------------------------------------
+--- Git Reset Initial Commit for Airflow Repository
+----------------------------------------------------------
+
+git reset --hard 72cc72bbf0d9b3dc499100a26054e355dd78ec2f
+
+----------------------------------------------------------
+---- Git cherry pick to specific commits............
+----------------------------------------------------------
+
+git cherry-pick 872a6f1
+
+-----------------------------
+
+---------------------------------------------------------------------------------------
+---- Git add upstream to syc with local branches when performed
+	git pull --all  ............
+---------------------------------------------------------------------------------------
+
+git remote add upstream https://github.com/bnz-dap/bdh-astronomer-airflow-dags.git
+
+git remote add upstream https://github.com/bnz-dap/fch-gdw-legacy-data-migration.git
+
+git remote add upstream  https://github.com/bnz-dap/fch_snowflake_cicd.git
+
+
+---------------------------------------------------------------------------------------
+---- Git Log
+---------------------------------------------------------------------------------------
+
+git log --graph --oneline --decorate
+
+---------------------------------------------------------------------------------------
+
+################################################################################################
+---- Create Tags:
+===========================================================================================
+
+git tag -a v0.3 -m "baseline tag to create new strategy branches 0.3"
+
+git push origin v0.2
+
+---show tags log
+git show --tags --no-patch --format=short
+
+---git tags log in one line with description
+git for-each-ref --format="%(refname:short) %(taggerdate) %(subject) %(body)" refs/tags
+  
+---- Delete local Git tag
+git tag -d tag name
+
+---- Delete a remote Git tag
+git push --delete origin tagname
+
+----“git tag” with the “-n” option in order to have an extensive description of your tag list
+$ git tag -n
+
+----------------------------------------------------------
+---- Diff Between TWO Tags
+git diff --name-status v0.5.8 v0.5.9
+git diff v0.5.8 v0.5.9 --name-status
+git diff v0.5.8 v0.5.9 --numstat
+git diff v0.5.8 v0.5.9 --stat --stat-width=100
+
+--store diff into output file
+git diff --name-status v0.5.11 v0.5.12 >> C:/hem_temp/git-version-diff-logs/diff-v0_5_11-v0_5_12-oct132022-1.txt 2>&1 &
+git diff --shortstat v0.5.11 v0.5.12 >> C:/hem_temp/git-version-diff-logs/diff-v0_5_11-v0_5_12-oct132022-1.txt 2>&1 &
+
+
+git diff --shortstat v0.7.79 v0.7.80 >> C:/hem_temp/git-version-diff-logs/diff-v0_7.79-v0_7_80-20092023.txt 2>&1 &
+git diff --name-status  v0.7.79 v0.7.80 >> C:/hem_temp/git-version-diff-logs/diff-v0_7.79-v0_7_80-20092023.txt 2>&1 &
+
+
+git diff --name-status v0.5.9 v0.5.10 --output=C:/hem_temp/git-version-diff-logs/test.txt
+git diff --shortstat v0.5.9 v0.5.10 --output=C:/hem_temp/git-version-diff-logs/test.txt
+
+----------------------------------------------------------
+---- List of commits Between TWO Tags
+git log --pretty=oneline v0.5.8..v0.5.9
+
+----------------------------------------------------------
+
+################################################################################################
+
+==============================================================================================
+---- Git Diff Between TWO Commits 
+----------------------------------------------------------
+
+git diff --name-only 18d04489640c1967ddf92e7381c7b4384d9b99f1..f422a74b1a0f25d191d09d07a2eb74122fd86914
+git diff --name-status 18d04489640c1967ddf92e7381c7b4384d9b99f1..f422a74b1a0f25d191d09d07a2eb74122fd86914
+
+--redirect output file
+git diff --name-status 18d04489640c1967ddf92e7381c7b4384d9b99f1..f422a74b1a0f25d191d09d07a2eb74122fd86914 > diff.txt
+
+--git diff two files
+
+git diff airflow-sit01..develop -- fch_base_ibscol_1p2_gep142_fclty_chrg_ip_ar_rltshp_full.py
+git diff release_v1.0/colletral-base-tables..develop -- fch_base_ibscol_1p2_gep142_fclty_chrg_ip_ar_rltshp_full.py
+
+----  Comparing branches
+
+$ git diff topic	master	  (1)
+$ git diff topic..master	  (2)
+$ git diff topic...master  (3)
+
+1. Changes between the tips of the topic and	the master branches.
+2. Same as above.
+3. Changes that occurred on the master branch since when the	topic
+branch was started off it.
+
+---- While MERGINg get list of conflict files
+git diff --name-only --diff-filter=U
+git ls-files --unmerged | cut -f2 | sort -u
+
+==============================================================================================
+---------------------------------------------------------------------------------------
+---- Git search for specific string in all files
+---------------------------------------------------------------------------------------
+
+git grep $'PK_CHNL_USG_TRANSLATION_LOAD_STATUS'
+
+++++List only Files
+git grep -E -l "create_GDW_CHRG_TRNSLT_uq_constraint"
+
+---------------------------------------------------------------------------------------
+---- get conflict files list during git MERGE.
+---------------------------------------------------------------------------------------
+
+git status --short | grep UU
+
+---------------------------------------------------------------------------------------
+---- Git PUSH to origin
+---------------------------------------------------------------------------------------
+
+git push --set-upstream origin feature-branch
+git push --set-upstream origin develop
+
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+---- Git MERGE, acceps all our changes...
+---------------------------------------------------------------------------------------
+##Special merge
+$ git merge -s ours obsolete
+
+## Merge: accepting all INCOMING changes
+$ git checkout airflow-sit01
+$ git merge --squash -X theirs release_v1.0.0/bulk-deployment-base-tables
+
+merge no commit 
+$ git merge --no-commit main
+
+$ git merge --no-commit --no-ff
+
+##Squash merge
+$ git merge --squash 
+
+---------------------------------------------------------------------------------------
+
+---- Git DELETE to origin branch
+---------------------------------------------------------------------------------------
+
+git push origin --delete <branch>
+
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+---- Git list files
+-------------------------------------------------------------------------------------------
+++ check files in current branch
+git ls-files *fch_milestone_eod_end_of_batch*
+
+++ check files in different  branch
+git ls-tree develop -- plugins/operators/snowflake_to_s3_operator.py
+
+++ check files in different  branch with pattern match
+git diff --name-only release_v3.0.0/bulk-deployment develop -- "*base_ar_msmt_mnthly-insert_4*"
+
+++ list the files from specific commit..
+git show --pretty="" --name-only bd61ad98
+
+---------------------------------------------------------------------------------------
+---- Git remove untracked and staged files
+-------------------------------------------------------------------------------------------
+List out the Files to be removed
+git clean -n
+
+List out the Files and Directories to be removed
+git clean -n -d
+
+Remove the unstaged files
+git clean -f
+
+Remove the unstaged files and the unstaged directories
+git clean -f -d
+
+----------------------------------------------------------
+---- Git log history to specific file
+----------------------------------------------------------
+git log --oneline dags/fch_milestone_eod_end_of_batch.py
+
+:: Show commit and dates of commits
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s" dags/sql/snowflake/nzfinrpts/tmp_ifrs9_bankr_org_unt_mbrshp-insert_1.sql
+
+git log -p dags/fch_milestone_eod_end_of_batch.py
+
+:: specific commmit what files changed
+git log -1 --oneline --name-only --pretty='' aa4c2e28268352a3360837a723942e72eea4647c
+
+----------------------------------------------------------
+---- Git tracking branches
+----------------------------------------------------------
+git checkout --track origin/airflow-syst01
+git branch -vv
+
+ 
+
+----------------------------------------------------------
+
+----------------------------------------------------------
+---- Git merge failed -- reset all changes
+----------------------------------------------------------
+# Reset all the changes back to the last commit.
+# Note: This cannot be reverted!
+
+$ git reset --hard HEAD
+
+# OR
+$ git merge --abort
+
+---GIT Merge test -----------------
+
+git checkout master
+git checkout -b trial_merge
+git merge topic_branch
+
+After completing the merge, it is easy to see the consolidated change from master
+
+git diff master
+When done, simply delete the trial_merge branch
+
+git checkout master
+git branch -D trial_merge
+
+----------------------------------------------------------
+---- Git config list
+----------------------------------------------------------
+git config --list
+
+----------------------------------------------------------
+---- Git create PULL request Template
+----------------------------------------------------------
+.github/PULL_REQUEST_TEMPLATE/branches/develop.md
+
+--------------------------------------------------------------------------------------------------------------------
+---- Linux Command to count number of files under dir and sub dir's
+--------------------------------------------------------------------------------------------------------------------
+
+
+find -maxdepth 1 -type d | sort | while read -r dir; do n=$(find "$dir" -type f | wc -l); printf "%4d : %s\n" $n "$dir"; done
+
+find /c/git_repositories/bdh-astronomer-airflow-dags/dags -type f -print | wc -l
+
+--------------------------------------------------------------------------------------------------------------------
+ERROR: cannot lock ref :: cannot create 'refs/remotes/origin/ :: (unable to update local ref)
+--------------------------------------------------------------------------------------------------------------------
+Run the below commands if any such errors 
+git gc --prune=now
+git remote prune origin
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Splunk Logs search for Github Latest commits for airflow repository
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+index="aks_prod_std" cluster_name="aue-prod-astro-aks01""kubernetes.namespace_name"="bnz-astronomer-github-sync" "8f06246d8951eb888ec797a0f872cd8bc5f3bd69"
